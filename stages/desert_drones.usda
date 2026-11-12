@@ -1,0 +1,412 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary cameraSettings = {
+            dictionary Front = {
+                double3 position = (0, 0, 500)
+                double radius = 5
+            }
+            dictionary Perspective = {
+                double3 position = (5, 5, 5)
+                double3 target = (-3.978038343177559e-8, 7.956076863990802e-8, -3.978038254359717e-8)
+            }
+            dictionary Right = {
+                double3 position = (-500, 0, 0)
+                double radius = 5
+            }
+            dictionary Top = {
+                double3 position = (0, 500, 0)
+                double radius = 5
+            }
+            string boundCamera = "/OmniverseKit_Persp"
+        }
+        dictionary renderSettings = {
+        }
+    }
+    subLayers = [
+        @https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Machinima/Squad/Stages/Desert/DesertStage.usd@
+    ]
+)
+
+def "Render" (
+    hide_in_stage_window = true
+    no_delete = true
+)
+{
+    def "OmniverseKit"
+    {
+        def "HydraTextures" (
+            hide_in_stage_window = true
+            no_delete = true
+        )
+        {
+            def RenderProduct "omni_kit_widget_viewport_ViewportTexture_0" (
+                prepend apiSchemas = ["OmniRtxSettingsCommonAdvancedAPI_1", "OmniRtxSettingsRtAdvancedAPI_1", "OmniRtxSettingsPtAdvancedAPI_1", "OmniRtxSettingsParticleFieldAPI_1", "OmniRtxPostColorGradingAPI_1", "OmniRtxPostChromaticAberrationAPI_1", "OmniRtxPostBloomPhysicalAPI_1", "OmniRtxPostMatteObjectAPI_1", "OmniRtxPostCompositingAPI_1", "OmniRtxPostDofAPI_1", "OmniRtxPostMotionBlurAPI_1", "OmniRtxPostTvNoiseAPI_1", "OmniRtxPostTonemapIrayReinhardAPI_1", "OmniRtxPostDebugSettingsAPI_1", "OmniRtxDebugSettingsAPI_1"]
+                hide_in_stage_window = true
+                no_delete = true
+            )
+            {
+                rel camera = </OmniverseKit_Persp>
+                token omni:rtx:ambientOcclusion:denoiserMode = "none"
+                token omni:rtx:background:source:texture:textureMode = "repeatMirrored"
+                token omni:rtx:background:source:type = "domeLight"
+                bool omni:rtx:debug:view:pixelDebug:enableFixedTextPos = 1
+                token omni:rtx:directLighting:sampledLighting:denoisingTechnique = "None"
+                bool omni:rtx:dlss:frameGeneration = 0
+                bool omni:rtx:indirectDiffuse:denoiser:enabled = 0
+                bool omni:rtx:material:db:syncLoads = 1
+                token omni:rtx:post:dlss:execMode = "performance"
+                bool omni:rtx:post:registeredCompositing:invertColorCorrection = 1
+                bool omni:rtx:post:registeredCompositing:invertToneMap = 1
+                bool omni:rtx:pt:adaptiveSampling:filterError = 0
+                uint omni:rtx:pt:adaptiveSampling:fixedSppIterations = 2
+                int omni:rtx:pt:clampSpp = 64
+                uint omni:rtx:pt:limits:maxBounces = 3
+                uint omni:rtx:pt:limits:maxGlossyBounces = 3
+                uint omni:rtx:pt:maxSamplesPerLaunch = 2073600
+                uint omni:rtx:pt:mgpu:maxPixelsPerRegionExponent = 12
+                int omni:rtx:pt:samplesPerIteration = 64
+                uint omni:rtx:pt:samplesPerPixel = 64
+                bool omni:rtx:reflections:denoiser:enabled = 0
+                token omni:rtx:rendermode = "RealTimePathTracing"
+                color3f omni:rtx:rt:ambientLight:color = (0.1, 0.1, 0.1)
+                bool omni:rtx:rt:demoire = 0
+                bool omni:rtx:rt:lightcache:spatialCache:dontResolveConflicts = 1
+                int omni:rtx:rt:sss:samples = 1
+                uint omni:rtx:rtpt:maxVolumeBounces = 15
+                float omni:rtx:rtpt:modulatingRoughnessThreshold = 0.08
+                bool omni:rtx:scene:hydra:materialSyncLoads = 1
+                bool omni:rtx:scene:hydra:mdlMaterialWarmup = 1
+                rel orderedVars = </Render/Vars/LdrColor>
+                custom bool overrideClipRange = 0
+                uniform int2 resolution = (1920, 1080)
+            }
+        }
+    }
+
+    def RenderSettings "OmniverseGlobalRenderSettings" (
+        prepend apiSchemas = ["OmniRtxSettingsGlobalRtAdvancedAPI_1", "OmniRtxSettingsGlobalPtAdvancedAPI_1"]
+        no_delete = true
+    )
+    {
+        rel products = </Render/OmniverseKit/HydraTextures/omni_kit_widget_viewport_ViewportTexture_0>
+    }
+
+    def "Vars" (
+        hide_in_stage_window = true
+        no_delete = true
+    )
+    {
+        def RenderVar "LdrColor" (
+            hide_in_stage_window = true
+            no_delete = true
+        )
+        {
+            uniform string sourceName = "LdrColor"
+            uniform token sourceType = "raw"
+        }
+    }
+}
+
+over "OmniverseKit_Persp" (
+    prepend apiSchemas = ["OmniRtxCameraAutoExposureAPI_1", "OmniRtxCameraExposureAPI_1"]
+    customData = {
+        dictionary omni = {
+            dictionary kit = {
+                bool hide_in_stage_window = 1
+                bool no_delete = 1
+            }
+        }
+    }
+    hide_in_stage_window = true
+    kind = "component"
+    no_delete = true
+)
+{
+    float2 clippingRange = (0.01, 10000000)
+    float exposure:fStop = 5
+    float exposure:responsivity = 1.1026709
+    float exposure:time = 0.02
+    float focalLength = 18.147562
+    float focusDistance = 400
+    custom uniform vector3d omni:kit:centerOfInterest = (0, 0, -8.660254037844386)
+    float3 xformOp:rotateXYZ = (-35.26439, 45, 2.2489917e-15)
+    float3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (5, 5, 5)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+}
+
+over "Root"
+{
+    def Xform "DroneSwarm"
+    {
+        def Xform "drone_00" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["drone"]
+            float3 xformOp:rotateXYZ = (1.6669617, -1.5312295, 197.188)
+            float3 xformOp:scale = (0.83365667, 0.83365667, 0.83365667)
+            double3 xformOp:translate = (30451.702135960306, 70640.76867849537, -2009.155679688238)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+            def Xform "asset" (
+                prepend references = @https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Machinima/Squad/Vehicles/Drone/SK_DroneGhost.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "drone_01" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["drone"]
+            float3 xformOp:rotateXYZ = (-5.2465324, -5.2847857, 74.145134)
+            float3 xformOp:scale = (0.83365667, 0.83365667, 0.83365667)
+            double3 xformOp:translate = (30587.622561232154, 70807.58210314582, -1720.567343049393)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+            def Xform "asset" (
+                prepend references = @https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Machinima/Squad/Vehicles/Drone/SK_DroneGhost.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "drone_02" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["drone"]
+            float3 xformOp:rotateXYZ = (2.1647997, -0.8688923, 113.09298)
+            float3 xformOp:scale = (0.83365667, 0.83365667, 0.83365667)
+            double3 xformOp:translate = (30486.010160791375, 71006.68013658676, -1581.623065624688)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+            def Xform "asset" (
+                prepend references = @https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Machinima/Squad/Vehicles/Drone/SK_DroneGhost.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "drone_03" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["drone"]
+            float3 xformOp:rotateXYZ = (1.0267423, -0.5617875, 107.91612)
+            float3 xformOp:scale = (0.83365667, 0.83365667, 0.83365667)
+            double3 xformOp:translate = (30180.445164886278, 70934.8995884178, -1785.2648235995582)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+            def Xform "asset" (
+                prepend references = @https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Machinima/Squad/Vehicles/Drone/SK_DroneGhost.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "drone_04" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["drone"]
+            float3 xformOp:rotateXYZ = (3.5325537, 2.3879333, 87.87474)
+            float3 xformOp:scale = (0.83365667, 0.83365667, 0.83365667)
+            double3 xformOp:translate = (30306.158851086773, 70731.75904492005, -1490.4004145338783)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+            def Xform "asset" (
+                prepend references = @https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Machinima/Squad/Vehicles/Drone/SK_DroneGhost.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "drone_05" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["drone"]
+            float3 xformOp:rotateXYZ = (0.8930845, 0.30235803, 315.0495)
+            float3 xformOp:scale = (0.83365667, 0.83365667, 0.83365667)
+            double3 xformOp:translate = (30686.97605367933, 70394.21176525182, -1950.1366325225426)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+            def Xform "asset" (
+                prepend references = @https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Machinima/Squad/Vehicles/Drone/SK_DroneGhost.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "drone_06" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["drone"]
+            float3 xformOp:rotateXYZ = (2.7533436, -2.5447469, 352.86295)
+            float3 xformOp:scale = (0.83365667, 0.83365667, 0.83365667)
+            double3 xformOp:translate = (30418.07666266657, 70293.77688626766, -2057.746139145422)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+            def Xform "asset" (
+                prepend references = @https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Machinima/Squad/Vehicles/Drone/SK_DroneGhost.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "drone_07" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["drone"]
+            float3 xformOp:rotateXYZ = (-4.5832105, -0.9825261, 272.57074)
+            float3 xformOp:scale = (0.83365667, 0.83365667, 0.83365667)
+            double3 xformOp:translate = (30626.863143127506, 70780.98111211973, -1553.5336894009044)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+            def Xform "asset" (
+                prepend references = @https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Machinima/Squad/Vehicles/Drone/SK_DroneGhost.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "drone_08" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["drone"]
+            float3 xformOp:rotateXYZ = (-4.1761856, -0.13244279, 14.114613)
+            float3 xformOp:scale = (0.83365667, 0.83365667, 0.83365667)
+            double3 xformOp:translate = (30459.168989769376, 70915.16043264695, -1865.5567371889213)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+            def Xform "asset" (
+                prepend references = @https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Machinima/Squad/Vehicles/Drone/SK_DroneGhost.usd@
+            )
+            {
+            }
+        }
+
+        def Xform "drone_09" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["drone"]
+            float3 xformOp:rotateXYZ = (2.0185902, 3.1748505, 206.28934)
+            float3 xformOp:scale = (0.83365667, 0.83365667, 0.83365667)
+            double3 xformOp:translate = (30092.197059875667, 70475.78005339693, -1965.1038629943243)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+            def Xform "asset" (
+                prepend references = @https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Machinima/Squad/Vehicles/Drone/SK_DroneGhost.usd@
+            )
+            {
+            }
+        }
+    }
+
+    def "RenderCams"
+    {
+        def Camera "wide_40m"
+        {
+            float2 clippingRange = (10, 5000000)
+            float focalLength = 18
+            float horizontalAperture = 20.955
+            float verticalAperture = 11.787188
+            matrix4d xformOp:transform = ( (-0.8660258676214241, -0.4999991966099142, -2.775557561562892e-17, 0), (0.2867878533123452, -0.49673219711566385, 0.8191519099294967, -0), (-0.4095752968662252, 0.709406743510439, 0.5735766282362436, 0), (29347.28, 72271.82, -420.3099999999914, 1) )
+            uniform token[] xformOpOrder = ["xformOp:transform"]
+        }
+
+        def Camera "close"
+        {
+            float2 clippingRange = (10, 5000000)
+            float focalLength = 18
+            float horizontalAperture = 20.955
+            float verticalAperture = 11.787188
+            matrix4d xformOp:transform = ( (-0.8660258676214223, -0.499999196609917, 0, 0), (0.3068832535420509, -0.53153852588004, 0.7894868359895046, -0), (-0.3947427837288577, 0.6837160221135026, 0.6137674932735365, 0), (30034.286174106936, 71382.73011377953, -1183.374615042069, 1) )
+            uniform token[] xformOpOrder = ["xformOp:transform"]
+        }
+    }
+}
+
+over "OmniverseKit_Front" (
+    customData = {
+        dictionary omni = {
+            dictionary kit = {
+                bool hide_in_stage_window = 1
+                bool no_delete = 1
+            }
+        }
+    }
+    hide_in_stage_window = true
+    kind = "component"
+    no_delete = true
+)
+{
+    float2 clippingRange = (1, 10000000)
+    float horizontalAperture = 50
+    custom uniform vector3d omni:kit:centerOfInterest = (0, 0, -500)
+    token projection = "orthographic"
+    float verticalAperture = 50
+    float3 xformOp:rotateXYZ = (-0, 0, -0)
+    float3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (0, 0, 500)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+}
+
+over "OmniverseKit_Right" (
+    customData = {
+        dictionary omni = {
+            dictionary kit = {
+                bool hide_in_stage_window = 1
+                bool no_delete = 1
+            }
+        }
+    }
+    hide_in_stage_window = true
+    kind = "component"
+    no_delete = true
+)
+{
+    float2 clippingRange = (1, 10000000)
+    float horizontalAperture = 50
+    custom uniform vector3d omni:kit:centerOfInterest = (0, 0, -500)
+    token projection = "orthographic"
+    float verticalAperture = 50
+    float3 xformOp:rotateXYZ = (0, -90, -0)
+    float3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (-500, 0, 0)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+}
+
+over "OmniverseKit_Top" (
+    customData = {
+        dictionary omni = {
+            dictionary kit = {
+                bool hide_in_stage_window = 1
+                bool no_delete = 1
+            }
+        }
+    }
+    hide_in_stage_window = true
+    kind = "component"
+    no_delete = true
+)
+{
+    float2 clippingRange = (1, 10000000)
+    float horizontalAperture = 50
+    custom uniform vector3d omni:kit:centerOfInterest = (0, 0, -500)
+    token projection = "orthographic"
+    float verticalAperture = 50
+    float3 xformOp:rotateXYZ = (90, -4.961563e-15, 180)
+    float3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (0, 500, 0)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+}
+

@@ -1,0 +1,5424 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary cameraSettings = {
+            dictionary Front = {
+                double3 position = (0, 0, 500)
+                double radius = 5
+            }
+            dictionary Perspective = {
+                double3 position = (5, 5, 5)
+                double3 target = (-3.978038343177559e-8, 7.956076863990802e-8, -3.978038254359717e-8)
+            }
+            dictionary Right = {
+                double3 position = (-500, 0, 0)
+                double radius = 5
+            }
+            dictionary Top = {
+                double3 position = (0, 500, 0)
+                double radius = 5
+            }
+            string boundCamera = "/OmniverseKit_Persp"
+        }
+        dictionary renderSettings = {
+        }
+    }
+    subLayers = [
+        @./desert_drones.usda@
+    ]
+)
+
+over "Render"
+{
+    over "OmniverseKit"
+    {
+        over "HydraTextures"
+        {
+            over "omni_kit_widget_viewport_ViewportTexture_0"
+            {
+                rel camera = </OmniverseKit_Persp>
+                rel orderedVars = </Render/Vars/LdrColor>
+                custom bool overrideClipRange = 0
+                uniform int2 resolution = (1280, 720)
+            }
+        }
+    }
+}
+
+over "Root"
+{
+    def "Technical_Wreck_Burnt_17" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["vehicle"]
+    }
+
+    def "Technical_Wreck_Burnt2" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["vehicle"]
+    }
+
+    def "SM_Mercedes_Truck_Base_01_9" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["vehicle"]
+    }
+
+    def "SM_Mercedes_Truck_Mixer_01_12" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["vehicle"]
+    }
+
+    def "SM_Mercedes_Truck_Base_2" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["vehicle"]
+    }
+
+    def "SM_Mercedes_Truck_Mixer_2" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["vehicle"]
+    }
+
+    def "SM_Mercedes_Truck_Base_3" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["vehicle"]
+    }
+
+    def "SM_Mercedes_Truck_Mixer_3" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["vehicle"]
+    }
+
+    def "SM_Mercedes_Truck_Base_4" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["vehicle"]
+    }
+
+    def "SM_Mercedes_Truck_Mixer_4" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["vehicle"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth_21" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth2" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth3" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth4" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth5" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth6" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth7" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth8" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth9" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth10" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth11" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth12" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth13" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth14" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth15" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth16" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth17" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth18" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth19" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth20" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth21" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth22" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth23" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth24" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth25" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth26" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth27" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth28" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth29" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth30" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth31" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth32" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth33" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth34_58" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth35" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth36" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth37" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth38" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth39" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth40" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth41" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth42" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_ME_Wall_D_Short_Smooth43" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["wall_fence"]
+    }
+
+    def "SM_City_Car_5" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["vehicle"]
+    }
+
+    def "SM_City_Car_04_8" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["vehicle"]
+    }
+
+    def "SM_City_Car_02_11" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["vehicle"]
+    }
+
+    def "SM_Mercedes_Truck_Base_20" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["vehicle"]
+    }
+
+    def "SM_Mercedes_Truck_Tipper_01_23" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["vehicle"]
+    }
+
+    def "SM_City_Car_26" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["vehicle"]
+    }
+
+    def "SM_City_Car_05_32" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["vehicle"]
+    }
+
+    def "SM_Mercedes_Truck_Base_35" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["vehicle"]
+    }
+
+    def "SM_Mercedes_Truck_Mixer_38" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["vehicle"]
+    }
+
+    def "SM_Market_Buildings_07_MERGED_41" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["building"]
+    }
+
+    def "SM_Market_Buildings_05_MERGED_44" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["building"]
+    }
+
+    def "SM_Market_Buildings_02_MERGED" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["building"]
+    }
+
+    def "Ace_Van3_48" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["vehicle"]
+    }
+
+    def "SM_City_Car_51" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["vehicle"]
+    }
+
+    def "SM_UrbCnt_T_01_MERGED_54" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["building"]
+    }
+
+    def "SM_Mercedes_Truck_Base_57" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["vehicle"]
+    }
+
+    def "SM_Mercedes_Truck_Tipper_60" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["vehicle"]
+    }
+
+    def "InstancedFoliageActor_1" (
+        append apiSchemas = ["SemanticsLabelsAPI:class"]
+    )
+    {
+        token[] semantics:labels:class = ["vegetation"]
+    }
+
+    over "Statics"
+    {
+        def "SM_ME_Wall_B_1000_Pillar_Intact5" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_B_2000_Pillar_Intact9_38" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_B_2000_Pillar_Intact11_40" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_B_2000_Pillar_Intact12_41" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_B_1000_Pillar_Intact6_42" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_B_1000_Pillar_Intact7" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_B_2000_Pillar_Intact13_43" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_B_1000_Pillar_Intact8" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_B_1000_Pillar_Intact10" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_UrbCnt_Bld_T_3" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_UrbCnt_Bld_T_5" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "M939_Wreck_Burnt_8" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["vehicle"]
+        }
+
+        def "SM_ME_Wall_E_1000_Pillar_Intact46_198" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_UrbRes_Bld_Med_0" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_Wall_A_2000_Pillar_Intact21_22" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_2000_Pillar_Intact22" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact149_32" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_2000_Pillar_Intact23" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_UrbRes_Bld_Med_10" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "ME_UrbRes_Bld_Med_06_21" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "ME_Wall_C_Short_27" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "ME_Wall_C_Short2_39" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_250_Pillar_Damaged_42" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_D_Short_Smooth_Broken8_53" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_D_Short_Smooth_Broken9" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "ME_WallStd_WallDoor_Large13" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "ME_WallStd_WallDoor_Large18_57" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_silo_12" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_silo_13" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_silo_14" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_silo_15" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_silo_18" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_silo_19" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_IRQ_Ind_Garrages_D81" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "bridge_8m_section2" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section3" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section4" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section59" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section60" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section61" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section62" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section63" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section64" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section65" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section66" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section68" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section67_41" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section69_42" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section72" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section73" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section88" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section89" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section90" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section91" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_UrbRes_Bld_Sm_69" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_Wall_A_500_Damaged_103" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact220" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_IRQ_Ind_Garrages_D78" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_UrbRes_Bld_Sm_73" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_UrbRes_Bld_Sm_74" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_UrbRes_Bld_Med_13_Porch7_10" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "ME_UrbRes_Bld_Sm_52" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "ME_UrbRes_Bld_Sm_53" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_Wall_A_250_Pillar_Curve_Right_Intact_17" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_250_Pillar_Curve_Right_Intact2" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact223_24" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Curve_Left_Intact4_5" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact225" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact226" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact228" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact229" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_250_Pillar_Damaged25_61" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Damaged_130" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_2000_Pillar_Damaged84_81" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_2000_Pillar_Intact25_84" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_Pillar_82" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "ME_WallStd_WallDoor_Large37" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "Roadside_Barrier33" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Roadside_Barrier35" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CorrugatedMetal18" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "ME_UrbRes_Bld_Sm_56" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "Roadside_Barrier58" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact240" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "bridge_8m_section28" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section124" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section29" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section125" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section30" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section126" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section31" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section127" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section44" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section128" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section51" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section129" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section_0" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section58_1" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_Pavement_Paveingblocks01_4m_8m452" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_Pavement_Paveingblocks01_4m_8m457_2" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "CorrugatedMetal40" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "ME_UrbRes_Bld_Sm_57" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_IRQ_Ind_Garrages_D82" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_Wall_E_1000_Pillar_Damaged31" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_IRQ_Ind_Garrages_C9_9" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_IRQ_Ind_Garrages_C10_14" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_IRQ_Ind_Garrages_D86" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_UrbCnt_Scaffolding_Ramp_Single_4m_a6" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_Pavement_Paveingblocks01_4m_8m53" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_Pavement_Paveingblocks01_4m_8m182" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_Pavement_Paveingblocks01_4m_8m183" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_Pavement_Paveingblocks01_4m_8m76_0" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_Pavement_Paveingblocks01_4m_8m52" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_Car_Sedan_Blockout128" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["vehicle"]
+        }
+
+        def "SM_IRQ_Ind_Garrages_D88" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "CivilianFence39" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact254" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact257" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Pillar_Intact363" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Pillar_Intact365" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Pillar_Intact368" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_1000_Pillar_Damaged38" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence64" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact248" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_UrbRes_Bld_Sm_103" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_UrbRes_Bld_Sm_104" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "ME_UrbRes_Bld_Sm_75" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_UrbRes_Bld_Lg_11" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_Wall_A_1000_Pillar_Damage_144" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Gate_Medium54_18" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Gate_Large7_21" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Damaged_205" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_1000_Pillar_Intact36_33" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_UrbRes_Bld_Med_63" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "Hiace_Van50_2" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["vehicle"]
+        }
+
+        def "SM_ME_Wall_B_500_Pillar_Damaged_78" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Pavement_Main_1000_56" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Main_1000_58" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Main_1000_60" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Main_1000_45" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Main_1000_49" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Main_1000_51" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Main_1000_52" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Main_1000_53" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Main_1000_54" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Main_1000_55" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Main_1000_57" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_Concrete_Bremer_Wall_Short_41" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_Concrete_Bremer_Wall_Short_42" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_Concrete_Bremer_Wall_Short_43" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_Hesco_1x3_30" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Pavement_Main_1000_33" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Main_1000_34" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Wall_E_1000_Pillar_Intact130_12" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_1000_Pillar_Intact138" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_1000_Pillar_Intact140_28" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_1000_Pillar_Intact141" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_1000_Pillar_Intact144" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_250_Pillar_Intact24" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "ME_UrbRes_Bld_Sm_76" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_UrbRes_Bld_Sm_105" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_UrbRes_Bld_Sm_106" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_UrbRes_Bld_Med_13_Porch13_60" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "ME_WallStd_WallDoor_Large57" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_Wall_E_2000_Pillar_Intact18_5" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_Pillar66_25" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_250_Pillar_Intact27" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Gate_Large4_50" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_Pillar72" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Ace_Van_80" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["vehicle"]
+        }
+
+        def "SM_City_Car_2" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["vehicle"]
+        }
+
+        def "SM_City_Car_13" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["vehicle"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_927" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_928" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_929" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_930" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_933" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_934" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_938" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_941" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_945" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_942" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_944" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "Ace_Van2_198" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["vehicle"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_809" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_810" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_811" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_813" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_814" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_815" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_819" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_820" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_821" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_823" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_SandbagWallDestroyed_4" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_City_Car_00_104" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["vehicle"]
+        }
+
+        def "CivilianFence128" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence132" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence146" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_City_Car_15" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["vehicle"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_956" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_960" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_961" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_962" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_963" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_971" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Main_1000_59" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_8m_8m_Damaged02_14" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_4mto8m_8m_11" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_4mto8m_8m_15" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_4mto8m_8m_16" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "Marketplace_Flooring_10x10_02_A76_176" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "Marketplace_Flooring_10x10_02_A78" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_Car_Sedan_Blockout129" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["vehicle"]
+        }
+
+        def "SM_ME_Pavement_Main_1000_10" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Main_1000_11" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Main_1000_12" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Main_1000_13" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Main_1000_14" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Main_1000_15" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Main_1000_27" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Main_1000_28" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Main_1000_29" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Main_1000_30" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Main_1000_31" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Main_1000_32" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Main_1000_36" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_2m_4m_corner_8" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_2m_4m_corner_9" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_2m_4m_corner_10" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_2m_4m_corner_11" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_2m_4m_corner_12" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_UrbCnt_Sign_sml_01_a6_5" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_65" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_66" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_67" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_410" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_IRQ_Ind_Garages_Stairs11_41" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_Wall_F_500_Intact_17" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_F_500_Intact_19" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Damaged_15" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Damaged_20" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Pillar_Low_Intact140_132" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Pillar_Low_Intact143" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Pillar_Low_Intact144" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Pillar_Low_Intact145" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_1796" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_1797" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_1798" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_1799" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_1800" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_1801" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_1802" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_1803" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_1804" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_1807" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Wall_E_1000_Pillar_Damaged20_195" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Gate_Medium49_28" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Pillar_Intact10_14" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "ME_Wall_C_Short_Gate_Med_30" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_silo_16" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_silo_17" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_silo_20" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "bridge_8m_section82" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section83" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section84" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section85" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section87" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section92" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Wall_A_500_Damaged_104" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Damaged_105" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact221" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact224" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Gate_Medium52_2" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_Pillar_81" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_End_Damaged_28" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_1000_Pillar_Damage_47" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Roadside_Barrier34" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Afg_fence_Corigated_01_4m6" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CorrugatedMetal20" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact239" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Technical_Wreck_Burnt_16" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["vehicle"]
+        }
+
+        def "SM_Pavement_Paveingblocks01_4m_8m451" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section131" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_Car_Sedan_Blockout110_13" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["vehicle"]
+        }
+
+        def "SM_Car_Sedan_Blockout111" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["vehicle"]
+        }
+
+        def "SM_ME_Wall_E_1000_Pillar_Damaged30" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_1000_Pillar_Damaged33" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence8_114" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence15" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence42" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence47" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Pillar_Intact358" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Pillar_Intact364" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Pillar_Intact367" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_1000_Pillar_Damaged36" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_1000_Pillar_Intact116" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Pillar_Intact369" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact245" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact251" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Intact25_27" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Gate_Small14_36" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_Jersey_Barrier_241" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_Hesco_V3_61" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_1000_Pillar_Damaged40_10" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_Pillar67" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_250_Pillar_Intact36" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "ME_WallStd_WallDoor_Large61" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_Wall_E_Pillar73" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_932" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_937" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_940" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_943" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_946" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_947" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_812" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_817" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_818" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_822" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_824" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_825" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_957" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_958" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_959" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_8m_8mend_6" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_8m_8m_Damaged02_13" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_4mto8m_8m_12" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_4mto8m_8m_13" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_4mto8m_8m_14" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "Marketplace_Flooring_10x10_02_A77_179" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "Marketplace_Flooring_10x10_02_A79" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_UrbCnt_Sign_lrg_02_c4_2" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_390" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_412" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_416" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_421" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_652" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_Pavement_Paveingblocks01_4m_8m463_12" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_Pavement_Paveingblocks01_4m_8m462" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_UrbCnt_Sign_lrg_02_c15" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_City_Car_127" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["vehicle"]
+        }
+
+        def "SM_City_Car_128" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["vehicle"]
+        }
+
+        def "SM_ME_UrbCnt_Tarp_Sml_01_a7_6" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_Wall_F_500_Intact_15" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Damaged_13" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Damaged_16" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Pillar_Low_Intact142" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_1805" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact148_25" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "ME_Wall_C_Short_Broken_01_34" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "ME_WallStd_WallDoor_Large12_76" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "bridge_8m_section93" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact219_32" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_Pillar_79" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "ME_WallStd_WallDoor_Large36_103" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "Roadside_Barrier24" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Roadside_Barrier27" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Roadside_Barrier36" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CorrugatedMetal16" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CorrugatedMetal21" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CorrugatedMetal27_111" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact241" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact243" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CorrugatedMetal39" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Roadside_Barrier47" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence33" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact255" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Pillar_Intact361" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_1000_Pillar_Damaged37" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_1000_Pillar_Damaged34" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_1000_Pillar_Damaged35" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_Jersey_Barrier_209" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_Hesco_wall_mid_97" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_250_Pillar_Intact34_110" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "ME_WallStd_WallDoor_Small52" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "ME_WallStd_WallDoor_Small53" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_Wall_E_500_Intact10_84" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_931" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_939" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_808" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_816" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "ME_WallStd_WallDoor_Medium43_16" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_SandbagWallDestroyed_2" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_SandbagWallBend_4" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence121" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence131" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence139" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_City_Car_4" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["vehicle"]
+        }
+
+        def "SM_MI_Gate_88" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_UrbCnt_Tarp_Sml_02_a10_3" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_Wall_F_500_Intact_18" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Pillar_Low_Intact146" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_1806" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_1808" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section71" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "bridge_8m_section86" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Wall_A_500_Damaged_106" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Roadside_Barrier21" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Roadside_Barrier22" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_250_Pillar_Curve_Right_Intact3" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Roadside_Barrier25" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Roadside_Barrier31" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Afg_fence_Corigated_01_2m_v2_43" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CorrugatedMetal19" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Roadside_Barrier53" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Roadside_Barrier57" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence21" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence46" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence51" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence55" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_B_1000_Pillar_Damaged5_5" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_Hesco_V3_56" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_End_Damaged_18" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Gate_Medium13_59" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_948" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_SandbagWallBend_3" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Damaged_12" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence200" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_Pillar_24" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "bridge_8m_section70" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Wall_A_Pillar_78" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_End_Damaged_22" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_End_Damaged_23" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_Pillar_80" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact222" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_End_Damaged_29" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Roadside_Barrier23" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Roadside_Barrier26" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Roadside_Barrier28" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Roadside_Barrier32" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Afg_fence_Corigated_01_4m4_47" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Roadside_Barrier59" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact242" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact244" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "bridge_8m_section130" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "Roadside_Barrier52" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Roadside_Barrier30_27" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Roadside_Barrier54" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Roadside_Barrier55" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Roadside_Barrier60" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Roadside_Barrier61" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence9" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence10" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence11" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence12" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence13" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence14" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence16" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence17" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence18" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence19" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence20" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence22" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence23" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence24" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence25" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence26" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence27" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence29" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence30" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence31" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence32" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence34" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence35" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence36" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence37" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence38" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence40" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence41" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence43" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence44" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence45" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence48" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence49" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence50" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence52" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence53" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence54" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence56" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence57" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence58" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence59" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence60" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact258" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Pillar_Intact359" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Pillar_Intact360" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Pillar_Intact362" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Pillar_Intact366" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence62" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence63" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact246" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact247" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact249" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_Jersey_Barrier_210" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_935" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_936" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "CivilianFence116" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence117" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence118" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence119" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence120" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence122" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence123" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence124" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence125" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence126" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence127" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence129" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence130" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence133" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence134" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence135" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence136" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence137" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence138" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence140" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence141" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence142" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence143" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence144" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence145" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence147" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence148" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence149" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Pavement_Curb_500_955" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["road"]
+        }
+
+        def "SM_ME_UrbCnt_Sign_med_01_a_14" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_UrbCnt_Sign_sml_02_a5_2" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_UrbCnt_Sign_Frame_med_03_a_5" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_UrbCnt_Sign_sml_02_a6" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "CivilianFence198_12" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Pillar_Intact373" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Pillar_Intact396" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_F_500_Intact_20" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_F_500_Intact_22" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Damaged_17" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Damaged_19" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence199" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Roadside_Barrier37" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Afg_fence_Corigated_01_2m_41" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Afg_fence_Corigated_01_2m_v3_45" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Afg_fence_Corigated_01_4m5" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CorrugatedMetal17" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CorrugatedMetal22" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CorrugatedMetal23" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CorrugatedMetal24" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CorrugatedMetal25" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CorrugatedMetal26" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Afg_fence_Corigated_01_4m13" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Afg_fence_Corigated_01_4m14" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Afg_fence_Corigated_01_4m15" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact256" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_500_Damaged_18" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "wire_fence_4m_2m_rustyend_50" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CivilianFence61" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "ME_WallStd_WallDoor_Medium19_100" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_Wall_A_250_Pillar_Damaged23_8" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_500_Pillar_Intact227" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_F_500_Intact_21" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_B_Pillar8" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_Pillar38" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CorrugatedMetal35" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CorrugatedMetal36" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CorrugatedMetal37" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CorrugatedMetal38" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CorrugatedMetal41" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CorrugatedMetal42" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "CorrugatedMetal43" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Roadside_Barrier29" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Roadside_Barrier48" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_1000_Pillar_Damaged32" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_MI_Gate_89" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_MI_Gate_90" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_MI_Gate_91" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_MI_Gate_92" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_MI_Gate_93" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_MI_Gate_94" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_Jersey_Barrier_211" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "ME_WallStd_WallDoor_Medium42_7" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "ME_WallStd_WallDoor_Small62_10" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "ME_WallStd_WallDoor_Large17_19" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "ME_WallStd_WallDoor_Small63_22" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_Wall_A_End_Damaged_17" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_A_End_Damaged_18" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "ME_WallStd_WallDoor_Large16_2" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["building"]
+        }
+
+        def "SM_ME_Wall_B_Pillar9" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_B_500_Pillar_Damaged_77" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_Hesco_V3_55" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_Hesco_V3_59" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_Hesco_V3_60" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_End_Damaged_17" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_Jersey_Barrier_388" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_Jersey_Barrier_390" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_Pillar69" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_250_Intact7" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "Hiace_Minibus_Wreck_Burnt_3" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["vehicle"]
+        }
+
+        def "SM_Hesco_1x6_11" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_Hesco_V3_64" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_Hesco_V3_65" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_MERGED_SM_Hesco_V3_27" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_MERGED_SM_Hesco_V3_28" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_Hesco_1x6_5" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_Hesco_1x6_6" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_Hesco_1x6_7" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_Hesco_1x3_23" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_Hesco_1x3_24" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_Hesco_V3_47" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_Hesco_1x3_25" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_Hesco_1x3_27" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_Hesco_1x3_28" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_E_250_Pillar_Intact23_40" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        def "SM_ME_Wall_D_Short_Smooth_Broken10_48" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["wall_fence"]
+        }
+
+        over "Blueprints"
+        {
+            def "ME_UrbRes_Anglecompound01" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["building"]
+            }
+
+            def "ME_UrbRes_singlerow58_5" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["building"]
+            }
+
+            def "ME_UrbRes_singlerow59_2" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["building"]
+            }
+
+            def "ME_UrbRes_villagecluster03_8" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["building"]
+            }
+
+            def "ME_UrbRes_villagecluster17_2" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["building"]
+            }
+
+            def "ME_UrbRes_villagecluster18_2" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["building"]
+            }
+
+            def "ME_UrbRes_villagecluster02_5" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["building"]
+            }
+
+            def "ME_UrbRes_Singlerow60_5" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["building"]
+            }
+
+            def "ME_UrbRes_singlerow65_3" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["building"]
+            }
+
+            def "ME_UrbRes_singlerow66_2" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["building"]
+            }
+
+            def "ME_UrbRes_villagecluster19_2" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["building"]
+            }
+
+            def "ME_UrbRes_villagecluster16_2" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["building"]
+            }
+
+            def "ME_UrbRes_villagecluster22_2" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["building"]
+            }
+
+            def "ME_UrbRes_villagecluster23_2" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["building"]
+            }
+
+            def "ME_UrbRes_villagecluster26_2" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["building"]
+            }
+
+            def "ME_UrbRes_villagecluster27_2" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["building"]
+            }
+
+            def "ME_UrbRes_villagecluster28_2" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["building"]
+            }
+
+            def "ME_UrbRes_nonlinear3_2" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["building"]
+            }
+
+            def "ME_UrbRes_villagecluster29_2" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["building"]
+            }
+
+            def "ME_UrbRes_villagecluster06_2" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["building"]
+            }
+
+            def "ME_UrbRes_villagecluster7_2" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["building"]
+            }
+
+            def "ME_UrbRes_villagecluster08_2" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["building"]
+            }
+
+            def "ME_UrbRes_villagecluster5_2" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["building"]
+            }
+
+            def "ME_UrbRes_doublerow6_2" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["building"]
+            }
+
+            def "ME_UrbRes_singlerow61_2" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["building"]
+            }
+
+            def "ME_UrbRes_singlerow12_2" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["building"]
+            }
+        }
+    }
+
+    over "Landscape"
+    {
+        over "LandscapeStreamingProxy_0"
+        {
+            def "LandscapeStreamingProxy_0_Foliage" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "LandscapeSplinesComponent_0" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["ground"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_460" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_461" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_462" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_463" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_464" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_465" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_466" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_467" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_468" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_469" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_470" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_471" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_472" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_473" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_474" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_475" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_476" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_477" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_478" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_479" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_480" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_481" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_482" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_483" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_484" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_485" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_486" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_487" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_488" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+
+            def "HierarchicalInstancedStaticMeshComponent_489" (
+                append apiSchemas = ["SemanticsLabelsAPI:class"]
+            )
+            {
+                token[] semantics:labels:class = ["vegetation"]
+            }
+        }
+    }
+
+    over "DroneSwarm"
+    {
+        def "drone_00" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["drone"]
+        }
+
+        def "drone_01" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["drone"]
+        }
+
+        def "drone_02" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["drone"]
+        }
+
+        def "drone_03" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["drone"]
+        }
+
+        def "drone_04" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["drone"]
+        }
+
+        def "drone_05" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["drone"]
+        }
+
+        def "drone_06" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["drone"]
+        }
+
+        def "drone_07" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["drone"]
+        }
+
+        def "drone_08" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["drone"]
+        }
+
+        def "drone_09" (
+            append apiSchemas = ["SemanticsLabelsAPI:class"]
+        )
+        {
+            token[] semantics:labels:class = ["drone"]
+        }
+    }
+
+    over "RenderCams"
+    {
+        over "close"
+        {
+            float verticalAperture = 11.787188
+        }
+
+        over "wide_40m"
+        {
+            float verticalAperture = 11.787188
+        }
+    }
+}
+
+over "OmniverseKit_Persp" (
+    prepend apiSchemas = ["OmniRtxCameraAutoExposureAPI_1", "OmniRtxCameraExposureAPI_1"]
+    customData = {
+        dictionary omni = {
+            dictionary kit = {
+                bool hide_in_stage_window = 1
+                bool no_delete = 1
+            }
+        }
+    }
+    hide_in_stage_window = true
+    kind = "component"
+    no_delete = true
+)
+{
+    float2 clippingRange = (0.01, 10000000)
+    float exposure:fStop = 5
+    float exposure:responsivity = 1.1026709
+    float exposure:time = 0.02
+    float focalLength = 18.147562
+    float focusDistance = 400
+    custom uniform vector3d omni:kit:centerOfInterest = (0, 0, -8.660254037844386)
+    float3 xformOp:rotateXYZ = (-35.26439, 45, 2.2489917e-15)
+    float3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (5, 5, 5)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+}
+
+over "OmniverseKit_Front" (
+    customData = {
+        dictionary omni = {
+            dictionary kit = {
+                bool hide_in_stage_window = 1
+                bool no_delete = 1
+            }
+        }
+    }
+    hide_in_stage_window = true
+    kind = "component"
+    no_delete = true
+)
+{
+    float2 clippingRange = (1, 10000000)
+    float horizontalAperture = 50
+    custom uniform vector3d omni:kit:centerOfInterest = (0, 0, -500)
+    token projection = "orthographic"
+    float verticalAperture = 50
+    float3 xformOp:rotateXYZ = (-0, 0, -0)
+    float3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (0, 0, 500)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+}
+
+over "OmniverseKit_Right" (
+    customData = {
+        dictionary omni = {
+            dictionary kit = {
+                bool hide_in_stage_window = 1
+                bool no_delete = 1
+            }
+        }
+    }
+    hide_in_stage_window = true
+    kind = "component"
+    no_delete = true
+)
+{
+    float2 clippingRange = (1, 10000000)
+    float horizontalAperture = 50
+    custom uniform vector3d omni:kit:centerOfInterest = (0, 0, -500)
+    token projection = "orthographic"
+    float verticalAperture = 50
+    float3 xformOp:rotateXYZ = (0, -90, -0)
+    float3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (-500, 0, 0)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+}
+
+over "OmniverseKit_Top" (
+    customData = {
+        dictionary omni = {
+            dictionary kit = {
+                bool hide_in_stage_window = 1
+                bool no_delete = 1
+            }
+        }
+    }
+    hide_in_stage_window = true
+    kind = "component"
+    no_delete = true
+)
+{
+    float2 clippingRange = (1, 10000000)
+    float horizontalAperture = 50
+    custom uniform vector3d omni:kit:centerOfInterest = (0, 0, -500)
+    token projection = "orthographic"
+    float verticalAperture = 50
+    float3 xformOp:rotateXYZ = (90, -4.961563e-15, 180)
+    float3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (0, 500, 0)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+}
+

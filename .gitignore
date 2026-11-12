@@ -1,0 +1,31 @@
+﻿# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Generated data and test outputs
+datasets/*
+!datasets/stages/
+_swarm_tests/
+_scale_test/
+output/
+outputs/
+renders/
+*.log
+*.err
+
+# Large or generated assets
+arl_lite_*.usdc
+*.zip
+*.pt
+*.pth
+*.onnx
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
