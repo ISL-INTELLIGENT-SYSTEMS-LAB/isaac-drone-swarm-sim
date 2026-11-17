@@ -299,7 +299,9 @@
    "generator": "gen_tracking",
    "deal_rank": 53,
    "seq_id": "t1_000",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -340,7 +342,9 @@
    "generator": "gen_tracking",
    "deal_rank": 6,
    "seq_id": "t1_001",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -381,7 +385,9 @@
    "generator": "gen_tracking",
    "deal_rank": 57,
    "seq_id": "t1_002",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -422,7 +428,9 @@
    "generator": "gen_tracking",
    "deal_rank": 52,
    "seq_id": "t1_003",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -463,7 +471,9 @@
    "generator": "gen_tracking",
    "deal_rank": 34,
    "seq_id": "t1_004",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -504,7 +514,9 @@
    "generator": "gen_tracking",
    "deal_rank": 8,
    "seq_id": "t1_005",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -545,7 +557,9 @@
    "generator": "gen_tracking",
    "deal_rank": 21,
    "seq_id": "t1_006",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -586,7 +600,9 @@
    "generator": "gen_tracking",
    "deal_rank": 37,
    "seq_id": "t1_007",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -627,7 +643,9 @@
    "generator": "gen_tracking",
    "deal_rank": 9,
    "seq_id": "t1_008",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -668,7 +686,9 @@
    "generator": "gen_tracking",
    "deal_rank": 26,
    "seq_id": "t1_009",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -709,7 +729,9 @@
    "generator": "gen_tracking",
    "deal_rank": 24,
    "seq_id": "t1_010",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -750,7 +772,9 @@
    "generator": "gen_tracking",
    "deal_rank": 18,
    "seq_id": "t1_011",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -791,7 +815,9 @@
    "generator": "gen_tracking",
    "deal_rank": 43,
    "seq_id": "t1_012",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -832,7 +858,9 @@
    "generator": "gen_tracking",
    "deal_rank": 10,
    "seq_id": "t1_013",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -873,7 +901,9 @@
    "generator": "gen_tracking",
    "deal_rank": 44,
    "seq_id": "t1_014",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -914,7 +944,9 @@
    "generator": "gen_tracking",
    "deal_rank": 27,
    "seq_id": "t1_015",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -955,7 +987,9 @@
    "generator": "gen_tracking",
    "deal_rank": 46,
    "seq_id": "t1_016",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -996,7 +1030,9 @@
    "generator": "gen_tracking",
    "deal_rank": 48,
    "seq_id": "t1_017",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -1037,7 +1073,9 @@
    "generator": "gen_tracking",
    "deal_rank": 33,
    "seq_id": "t1_018",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -1078,7 +1116,9 @@
    "generator": "gen_tracking",
    "deal_rank": 32,
    "seq_id": "t1_019",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -1119,7 +1159,9 @@
    "generator": "gen_tracking",
    "deal_rank": 2,
    "seq_id": "t1_020",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -1160,7 +1202,9 @@
    "generator": "gen_tracking",
    "deal_rank": 51,
    "seq_id": "t1_021",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -1201,7 +1245,9 @@
    "generator": "gen_tracking",
    "deal_rank": 45,
    "seq_id": "t1_022",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -1242,7 +1288,9 @@
    "generator": "gen_tracking",
    "deal_rank": 39,
    "seq_id": "t1_023",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -1283,7 +1331,9 @@
    "generator": "gen_tracking",
    "deal_rank": 16,
    "seq_id": "t1_024",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -1324,7 +1374,9 @@
    "generator": "gen_tracking",
    "deal_rank": 23,
    "seq_id": "t1_025",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -1365,7 +1417,9 @@
    "generator": "gen_tracking",
    "deal_rank": 55,
    "seq_id": "t1_026",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -1406,7 +1460,9 @@
    "generator": "gen_tracking",
    "deal_rank": 56,
    "seq_id": "t1_027",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -1447,7 +1503,9 @@
    "generator": "gen_tracking",
    "deal_rank": 5,
    "seq_id": "t1_028",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -1488,7 +1546,9 @@
    "generator": "gen_tracking",
    "deal_rank": 7,
    "seq_id": "t1_029",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -1529,7 +1589,9 @@
    "generator": "gen_tracking",
    "deal_rank": 28,
    "seq_id": "t1_030",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -1570,7 +1632,9 @@
    "generator": "gen_tracking",
    "deal_rank": 42,
    "seq_id": "t1_031",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -1611,7 +1675,9 @@
    "generator": "gen_tracking",
    "deal_rank": 31,
    "seq_id": "t1_032",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -1652,7 +1718,9 @@
    "generator": "gen_tracking",
    "deal_rank": 11,
    "seq_id": "t1_033",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -1693,7 +1761,9 @@
    "generator": "gen_tracking",
    "deal_rank": 58,
    "seq_id": "t1_034",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -1734,7 +1804,9 @@
    "generator": "gen_tracking",
    "deal_rank": 14,
    "seq_id": "t1_035",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -1775,7 +1847,9 @@
    "generator": "gen_tracking",
    "deal_rank": 47,
    "seq_id": "t1_036",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -1816,7 +1890,9 @@
    "generator": "gen_tracking",
    "deal_rank": 25,
    "seq_id": "t1_037",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -1857,7 +1933,9 @@
    "generator": "gen_tracking",
    "deal_rank": 59,
    "seq_id": "t1_038",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -1898,7 +1976,9 @@
    "generator": "gen_tracking",
    "deal_rank": 15,
    "seq_id": "t1_039",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -1939,7 +2019,9 @@
    "generator": "gen_tracking",
    "deal_rank": 19,
    "seq_id": "t1_040",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -1980,7 +2062,9 @@
    "generator": "gen_tracking",
    "deal_rank": 40,
    "seq_id": "t1_041",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -2021,7 +2105,9 @@
    "generator": "gen_tracking",
    "deal_rank": 49,
    "seq_id": "t1_042",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -2062,7 +2148,9 @@
    "generator": "gen_tracking",
    "deal_rank": 13,
    "seq_id": "t1_043",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -2103,7 +2191,9 @@
    "generator": "gen_tracking",
    "deal_rank": 36,
    "seq_id": "t1_044",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -2144,7 +2234,9 @@
    "generator": "gen_tracking",
    "deal_rank": 50,
    "seq_id": "t1_045",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -2185,7 +2277,9 @@
    "generator": "gen_tracking",
    "deal_rank": 35,
    "seq_id": "t1_046",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -2226,7 +2320,9 @@
    "generator": "gen_tracking",
    "deal_rank": 54,
    "seq_id": "t1_047",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -2267,7 +2363,9 @@
    "generator": "gen_tracking",
    "deal_rank": 20,
    "seq_id": "t1_048",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -2308,7 +2406,9 @@
    "generator": "gen_tracking",
    "deal_rank": 22,
    "seq_id": "t1_049",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -2349,7 +2449,9 @@
    "generator": "gen_tracking",
    "deal_rank": 12,
    "seq_id": "t1_050",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -2390,7 +2492,9 @@
    "generator": "gen_tracking",
    "deal_rank": 41,
    "seq_id": "t1_051",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -2431,7 +2535,9 @@
    "generator": "gen_tracking",
    "deal_rank": 29,
    "seq_id": "t1_052",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -2472,7 +2578,9 @@
    "generator": "gen_tracking",
    "deal_rank": 17,
    "seq_id": "t1_053",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -2513,7 +2621,9 @@
    "generator": "gen_tracking",
    "deal_rank": 1,
    "seq_id": "t1_054",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -2554,7 +2664,9 @@
    "generator": "gen_tracking",
    "deal_rank": 3,
    "seq_id": "t1_055",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -2595,7 +2707,9 @@
    "generator": "gen_tracking",
    "deal_rank": 30,
    "seq_id": "t1_056",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -2636,7 +2750,9 @@
    "generator": "gen_tracking",
    "deal_rank": 0,
    "seq_id": "t1_057",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -2677,7 +2793,9 @@
    "generator": "gen_tracking",
    "deal_rank": 38,
    "seq_id": "t1_058",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 1,
@@ -2718,7 +2836,9 @@
    "generator": "gen_tracking",
    "deal_rank": 4,
    "seq_id": "t1_059",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -2759,7 +2879,9 @@
    "generator": "gen_tracking",
    "deal_rank": 35,
    "seq_id": "t2_000",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -2800,7 +2922,9 @@
    "generator": "gen_tracking",
    "deal_rank": 41,
    "seq_id": "t2_001",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -2841,7 +2965,9 @@
    "generator": "gen_tracking",
    "deal_rank": 37,
    "seq_id": "t2_002",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -2882,7 +3008,9 @@
    "generator": "gen_tracking",
    "deal_rank": 43,
    "seq_id": "t2_003",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -2923,7 +3051,9 @@
    "generator": "gen_tracking",
    "deal_rank": 40,
    "seq_id": "t2_004",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -2964,7 +3094,9 @@
    "generator": "gen_tracking",
    "deal_rank": 42,
    "seq_id": "t2_005",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -3005,7 +3137,9 @@
    "generator": "gen_tracking",
    "deal_rank": 30,
    "seq_id": "t2_006",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -3046,7 +3180,9 @@
    "generator": "gen_tracking",
    "deal_rank": 49,
    "seq_id": "t2_007",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -3087,7 +3223,9 @@
    "generator": "gen_tracking",
    "deal_rank": 18,
    "seq_id": "t2_008",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -3128,7 +3266,9 @@
    "generator": "gen_tracking",
    "deal_rank": 22,
    "seq_id": "t2_009",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -3169,7 +3309,9 @@
    "generator": "gen_tracking",
    "deal_rank": 53,
    "seq_id": "t2_010",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -3210,7 +3352,9 @@
    "generator": "gen_tracking",
    "deal_rank": 7,
    "seq_id": "t2_011",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -3251,7 +3395,9 @@
    "generator": "gen_tracking",
    "deal_rank": 33,
    "seq_id": "t2_012",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -3292,7 +3438,9 @@
    "generator": "gen_tracking",
    "deal_rank": 19,
    "seq_id": "t2_013",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -3333,7 +3481,9 @@
    "generator": "gen_tracking",
    "deal_rank": 8,
    "seq_id": "t2_014",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -3374,7 +3524,9 @@
    "generator": "gen_tracking",
    "deal_rank": 25,
    "seq_id": "t2_015",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -3415,7 +3567,9 @@
    "generator": "gen_tracking",
    "deal_rank": 45,
    "seq_id": "t2_016",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -3456,7 +3610,9 @@
    "generator": "gen_tracking",
    "deal_rank": 31,
    "seq_id": "t2_017",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -3497,7 +3653,9 @@
    "generator": "gen_tracking",
    "deal_rank": 44,
    "seq_id": "t2_018",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -3538,7 +3696,9 @@
    "generator": "gen_tracking",
    "deal_rank": 39,
    "seq_id": "t2_019",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -3579,7 +3739,9 @@
    "generator": "gen_tracking",
    "deal_rank": 28,
    "seq_id": "t2_020",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -3620,7 +3782,9 @@
    "generator": "gen_tracking",
    "deal_rank": 26,
    "seq_id": "t2_021",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -3661,7 +3825,9 @@
    "generator": "gen_tracking",
    "deal_rank": 16,
    "seq_id": "t2_022",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -3702,7 +3868,9 @@
    "generator": "gen_tracking",
    "deal_rank": 50,
    "seq_id": "t2_023",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -3743,7 +3911,9 @@
    "generator": "gen_tracking",
    "deal_rank": 6,
    "seq_id": "t2_024",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -3784,7 +3954,9 @@
    "generator": "gen_tracking",
    "deal_rank": 46,
    "seq_id": "t2_025",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -3825,7 +3997,9 @@
    "generator": "gen_tracking",
    "deal_rank": 57,
    "seq_id": "t2_026",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -3866,7 +4040,9 @@
    "generator": "gen_tracking",
    "deal_rank": 52,
    "seq_id": "t2_027",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -3907,7 +4083,9 @@
    "generator": "gen_tracking",
    "deal_rank": 3,
    "seq_id": "t2_028",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -3948,7 +4126,9 @@
    "generator": "gen_tracking",
    "deal_rank": 12,
    "seq_id": "t2_029",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -3989,7 +4169,9 @@
    "generator": "gen_tracking",
    "deal_rank": 58,
    "seq_id": "t2_030",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -4030,7 +4212,9 @@
    "generator": "gen_tracking",
    "deal_rank": 9,
    "seq_id": "t2_031",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -4071,7 +4255,9 @@
    "generator": "gen_tracking",
    "deal_rank": 51,
    "seq_id": "t2_032",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -4112,7 +4298,9 @@
    "generator": "gen_tracking",
    "deal_rank": 14,
    "seq_id": "t2_033",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -4153,7 +4341,9 @@
    "generator": "gen_tracking",
    "deal_rank": 27,
    "seq_id": "t2_034",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -4194,7 +4384,9 @@
    "generator": "gen_tracking",
    "deal_rank": 55,
    "seq_id": "t2_035",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -4235,7 +4427,9 @@
    "generator": "gen_tracking",
    "deal_rank": 32,
    "seq_id": "t2_036",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -4276,7 +4470,9 @@
    "generator": "gen_tracking",
    "deal_rank": 54,
    "seq_id": "t2_037",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -4317,7 +4513,9 @@
    "generator": "gen_tracking",
    "deal_rank": 15,
    "seq_id": "t2_038",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -4358,7 +4556,9 @@
    "generator": "gen_tracking",
    "deal_rank": 47,
    "seq_id": "t2_039",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -4399,7 +4599,9 @@
    "generator": "gen_tracking",
    "deal_rank": 23,
    "seq_id": "t2_040",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -4440,7 +4642,9 @@
    "generator": "gen_tracking",
    "deal_rank": 17,
    "seq_id": "t2_041",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -4481,7 +4685,9 @@
    "generator": "gen_tracking",
    "deal_rank": 34,
    "seq_id": "t2_042",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -4522,7 +4728,9 @@
    "generator": "gen_tracking",
    "deal_rank": 20,
    "seq_id": "t2_043",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -4563,7 +4771,9 @@
    "generator": "gen_tracking",
    "deal_rank": 38,
    "seq_id": "t2_044",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -4604,7 +4814,9 @@
    "generator": "gen_tracking",
    "deal_rank": 13,
    "seq_id": "t2_045",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -4645,7 +4857,9 @@
    "generator": "gen_tracking",
    "deal_rank": 56,
    "seq_id": "t2_046",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -4686,7 +4900,9 @@
    "generator": "gen_tracking",
    "deal_rank": 59,
    "seq_id": "t2_047",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -4727,7 +4943,9 @@
    "generator": "gen_tracking",
    "deal_rank": 21,
    "seq_id": "t2_048",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -4768,7 +4986,9 @@
    "generator": "gen_tracking",
    "deal_rank": 2,
    "seq_id": "t2_049",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -4809,7 +5029,9 @@
    "generator": "gen_tracking",
    "deal_rank": 4,
    "seq_id": "t2_050",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -4850,7 +5072,9 @@
    "generator": "gen_tracking",
    "deal_rank": 5,
    "seq_id": "t2_051",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -4891,7 +5115,9 @@
    "generator": "gen_tracking",
    "deal_rank": 10,
    "seq_id": "t2_052",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -4932,7 +5158,9 @@
    "generator": "gen_tracking",
    "deal_rank": 29,
    "seq_id": "t2_053",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -4973,7 +5201,9 @@
    "generator": "gen_tracking",
    "deal_rank": 36,
    "seq_id": "t2_054",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -5014,7 +5244,9 @@
    "generator": "gen_tracking",
    "deal_rank": 0,
    "seq_id": "t2_055",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -5055,7 +5287,9 @@
    "generator": "gen_tracking",
    "deal_rank": 11,
    "seq_id": "t2_056",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -5096,7 +5330,9 @@
    "generator": "gen_tracking",
    "deal_rank": 1,
    "seq_id": "t2_057",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -5137,7 +5373,9 @@
    "generator": "gen_tracking",
    "deal_rank": 24,
    "seq_id": "t2_058",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 2,
@@ -5178,7 +5416,9 @@
    "generator": "gen_tracking",
    "deal_rank": 48,
    "seq_id": "t2_059",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)"
   },
   {
    "tier": 3,
@@ -5219,7 +5459,9 @@
    "generator": "gen_tracking",
    "deal_rank": 44,
    "seq_id": "t3_000",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -5260,7 +5502,9 @@
    "generator": "gen_tracking",
    "deal_rank": 50,
    "seq_id": "t3_001",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -5301,7 +5545,9 @@
    "generator": "gen_tracking",
    "deal_rank": 26,
    "seq_id": "t3_002",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -5342,7 +5588,9 @@
    "generator": "gen_tracking",
    "deal_rank": 11,
    "seq_id": "t3_003",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -5383,7 +5631,9 @@
    "generator": "gen_tracking",
    "deal_rank": 54,
    "seq_id": "t3_004",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -5424,7 +5674,9 @@
    "generator": "gen_tracking",
    "deal_rank": 2,
    "seq_id": "t3_005",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -5465,7 +5717,9 @@
    "generator": "gen_tracking",
    "deal_rank": 37,
    "seq_id": "t3_006",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -5506,7 +5760,9 @@
    "generator": "gen_tracking",
    "deal_rank": 12,
    "seq_id": "t3_007",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -5547,7 +5803,9 @@
    "generator": "gen_tracking",
    "deal_rank": 19,
    "seq_id": "t3_008",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -5588,7 +5846,9 @@
    "generator": "gen_tracking",
    "deal_rank": 46,
    "seq_id": "t3_009",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -5629,7 +5889,9 @@
    "generator": "gen_tracking",
    "deal_rank": 16,
    "seq_id": "t3_010",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -5670,7 +5932,9 @@
    "generator": "gen_tracking",
    "deal_rank": 5,
    "seq_id": "t3_011",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -5711,7 +5975,9 @@
    "generator": "gen_tracking",
    "deal_rank": 6,
    "seq_id": "t3_012",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -5752,7 +6018,9 @@
    "generator": "gen_tracking",
    "deal_rank": 17,
    "seq_id": "t3_013",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -5793,7 +6061,9 @@
    "generator": "gen_tracking",
    "deal_rank": 27,
    "seq_id": "t3_014",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -5834,7 +6104,9 @@
    "generator": "gen_tracking",
    "deal_rank": 45,
    "seq_id": "t3_015",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -5875,7 +6147,9 @@
    "generator": "gen_tracking",
    "deal_rank": 40,
    "seq_id": "t3_016",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -5916,7 +6190,9 @@
    "generator": "gen_tracking",
    "deal_rank": 39,
    "seq_id": "t3_017",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -5957,7 +6233,9 @@
    "generator": "gen_tracking",
    "deal_rank": 47,
    "seq_id": "t3_018",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -5998,7 +6276,9 @@
    "generator": "gen_tracking",
    "deal_rank": 41,
    "seq_id": "t3_019",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -6039,7 +6319,9 @@
    "generator": "gen_tracking",
    "deal_rank": 38,
    "seq_id": "t3_020",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -6080,7 +6362,9 @@
    "generator": "gen_tracking",
    "deal_rank": 43,
    "seq_id": "t3_021",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -6121,7 +6405,9 @@
    "generator": "gen_tracking",
    "deal_rank": 23,
    "seq_id": "t3_022",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -6162,7 +6448,9 @@
    "generator": "gen_tracking",
    "deal_rank": 51,
    "seq_id": "t3_023",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -6203,7 +6491,9 @@
    "generator": "gen_tracking",
    "deal_rank": 1,
    "seq_id": "t3_024",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -6244,7 +6534,9 @@
    "generator": "gen_tracking",
    "deal_rank": 13,
    "seq_id": "t3_025",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -6285,7 +6577,9 @@
    "generator": "gen_tracking",
    "deal_rank": 21,
    "seq_id": "t3_026",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -6326,7 +6620,9 @@
    "generator": "gen_tracking",
    "deal_rank": 55,
    "seq_id": "t3_027",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -6367,7 +6663,9 @@
    "generator": "gen_tracking",
    "deal_rank": 42,
    "seq_id": "t3_028",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -6408,7 +6706,9 @@
    "generator": "gen_tracking",
    "deal_rank": 32,
    "seq_id": "t3_029",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -6449,7 +6749,9 @@
    "generator": "gen_tracking",
    "deal_rank": 4,
    "seq_id": "t3_030",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -6490,7 +6792,9 @@
    "generator": "gen_tracking",
    "deal_rank": 52,
    "seq_id": "t3_031",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -6531,7 +6835,9 @@
    "generator": "gen_tracking",
    "deal_rank": 24,
    "seq_id": "t3_032",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -6572,7 +6878,9 @@
    "generator": "gen_tracking",
    "deal_rank": 22,
    "seq_id": "t3_033",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -6613,7 +6921,9 @@
    "generator": "gen_tracking",
    "deal_rank": 25,
    "seq_id": "t3_034",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -6654,7 +6964,9 @@
    "generator": "gen_tracking",
    "deal_rank": 57,
    "seq_id": "t3_035",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -6695,7 +7007,9 @@
    "generator": "gen_tracking",
    "deal_rank": 8,
    "seq_id": "t3_036",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -6736,7 +7050,9 @@
    "generator": "gen_tracking",
    "deal_rank": 53,
    "seq_id": "t3_037",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -6777,7 +7093,9 @@
    "generator": "gen_tracking",
    "deal_rank": 30,
    "seq_id": "t3_038",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -6818,7 +7136,9 @@
    "generator": "gen_tracking",
    "deal_rank": 48,
    "seq_id": "t3_039",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -6859,7 +7179,9 @@
    "generator": "gen_tracking",
    "deal_rank": 20,
    "seq_id": "t3_040",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -6900,7 +7222,9 @@
    "generator": "gen_tracking",
    "deal_rank": 29,
    "seq_id": "t3_041",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -6941,7 +7265,9 @@
    "generator": "gen_tracking",
    "deal_rank": 31,
    "seq_id": "t3_042",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -6982,7 +7308,9 @@
    "generator": "gen_tracking",
    "deal_rank": 3,
    "seq_id": "t3_043",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -7023,7 +7351,9 @@
    "generator": "gen_tracking",
    "deal_rank": 33,
    "seq_id": "t3_044",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -7064,7 +7394,9 @@
    "generator": "gen_tracking",
    "deal_rank": 9,
    "seq_id": "t3_045",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -7105,7 +7437,9 @@
    "generator": "gen_tracking",
    "deal_rank": 10,
    "seq_id": "t3_046",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -7146,7 +7480,9 @@
    "generator": "gen_tracking",
    "deal_rank": 18,
    "seq_id": "t3_047",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -7187,7 +7523,9 @@
    "generator": "gen_tracking",
    "deal_rank": 0,
    "seq_id": "t3_048",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -7228,7 +7566,9 @@
    "generator": "gen_tracking",
    "deal_rank": 7,
    "seq_id": "t3_049",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -7269,7 +7609,9 @@
    "generator": "gen_tracking",
    "deal_rank": 28,
    "seq_id": "t3_050",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -7310,7 +7652,9 @@
    "generator": "gen_tracking",
    "deal_rank": 59,
    "seq_id": "t3_051",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -7351,7 +7695,9 @@
    "generator": "gen_tracking",
    "deal_rank": 35,
    "seq_id": "t3_052",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -7392,7 +7738,9 @@
    "generator": "gen_tracking",
    "deal_rank": 36,
    "seq_id": "t3_053",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -7433,7 +7781,9 @@
    "generator": "gen_tracking",
    "deal_rank": 49,
    "seq_id": "t3_054",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -7474,7 +7824,9 @@
    "generator": "gen_tracking",
    "deal_rank": 58,
    "seq_id": "t3_055",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -7515,7 +7867,9 @@
    "generator": "gen_tracking",
    "deal_rank": 15,
    "seq_id": "t3_056",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -7556,7 +7910,9 @@
    "generator": "gen_tracking",
    "deal_rank": 14,
    "seq_id": "t3_057",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -7597,7 +7953,9 @@
    "generator": "gen_tracking",
    "deal_rank": 34,
    "seq_id": "t3_058",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 3,
@@ -7638,7 +7996,9 @@
    "generator": "gen_tracking",
    "deal_rank": 56,
    "seq_id": "t3_059",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "mid",
+   "gpu_note": "10 GB+ card; measured up to 9.4 GB at 175 drones; 1,000-drone scale test 9.0 GB"
   },
   {
    "tier": 4,
@@ -7679,7 +8039,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 1,
    "seq_id": "t4_000",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -7720,7 +8082,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 12,
    "seq_id": "t4_001",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -7761,7 +8125,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 8,
    "seq_id": "t4_002",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -7802,7 +8168,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 38,
    "seq_id": "t4_003",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -7843,7 +8211,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 36,
    "seq_id": "t4_004",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -7884,7 +8254,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 3,
    "seq_id": "t4_005",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -7925,7 +8297,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 37,
    "seq_id": "t4_006",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -7966,7 +8340,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 10,
    "seq_id": "t4_007",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -8007,7 +8383,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 35,
    "seq_id": "t4_008",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -8048,7 +8426,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 19,
    "seq_id": "t4_009",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -8089,7 +8469,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 11,
    "seq_id": "t4_010",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -8130,7 +8512,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 25,
    "seq_id": "t4_011",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -8171,7 +8555,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 9,
    "seq_id": "t4_012",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -8212,7 +8598,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 27,
    "seq_id": "t4_013",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -8253,7 +8641,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 4,
    "seq_id": "t4_014",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -8294,7 +8684,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 20,
    "seq_id": "t4_015",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -8335,7 +8727,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 16,
    "seq_id": "t4_016",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -8376,7 +8770,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 28,
    "seq_id": "t4_017",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -8417,7 +8813,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 6,
    "seq_id": "t4_018",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -8458,7 +8856,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 21,
    "seq_id": "t4_019",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -8499,7 +8899,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 24,
    "seq_id": "t4_020",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -8540,7 +8942,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 33,
    "seq_id": "t4_021",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -8581,7 +8985,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 5,
    "seq_id": "t4_022",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -8622,7 +9028,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 0,
    "seq_id": "t4_023",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -8663,7 +9071,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 32,
    "seq_id": "t4_024",
-   "assignee_slot": "P1"
+   "assignee_slot": "P1",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -8704,7 +9114,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 23,
    "seq_id": "t4_025",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -8745,7 +9157,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 22,
    "seq_id": "t4_026",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -8786,7 +9200,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 2,
    "seq_id": "t4_027",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -8827,7 +9243,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 26,
    "seq_id": "t4_028",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -8868,7 +9286,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 14,
    "seq_id": "t4_029",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -8909,7 +9329,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 30,
    "seq_id": "t4_030",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -8950,7 +9372,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 13,
    "seq_id": "t4_031",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -8991,7 +9415,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 34,
    "seq_id": "t4_032",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -9032,7 +9458,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 17,
    "seq_id": "t4_033",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -9073,7 +9501,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 7,
    "seq_id": "t4_034",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -9114,7 +9544,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 39,
    "seq_id": "t4_035",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -9155,7 +9587,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 31,
    "seq_id": "t4_036",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -9196,7 +9630,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 29,
    "seq_id": "t4_037",
-   "assignee_slot": "P2"
+   "assignee_slot": "P2",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -9237,7 +9673,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 18,
    "seq_id": "t4_038",
-   "assignee_slot": "P3"
+   "assignee_slot": "P3",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   },
   {
    "tier": 4,
@@ -9278,7 +9716,9 @@
    "generator": "needs_bigswarm_mode",
    "deal_rank": 15,
    "seq_id": "t4_039",
-   "assignee_slot": "P4"
+   "assignee_slot": "P4",
+   "gpu_class": "high",
+   "gpu_note": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"
   }
  ]
 }

@@ -41,6 +41,19 @@ same mix of tiers, splits, lighting, cameras and breakaways.
 - Estimate from those numbers (not measured): one 4-person slice is ~45 renderable rows x 50 frames, about 30 min of rendering plus
   ~20 Isaac Sim starts (one per tier / model mix / colour group), so roughly 40-60 min per person.
 
+## GPU memory per tier (`gpu_class` column in the manifest)
+
+| Tier | Drones per swarm | Who | gpu_class | What we measured |
+|---|---|---|---|---|
+| 1 | 1-10 | a | mid (10 GB+ card) | 8.6-9.4 GB peak |
+| 2 | 11-100 | b | mid (10 GB+ card) | 8.6-9.4 GB peak |
+| 3 | 101-1,000 | c | mid (10 GB+ card) | up to 9.4 GB at 175 drones; 9.0 GB at 1,000 in the scale test |
+| 4 | 1,001-100,000 | Mosa | high (12 GB+ card) | 9.2-9.5 GB in the scale test; flight mode not measured |
+
+Memory is dominated by Isaac Sim itself (about 7.5 GB with just the scene loaded), so it barely changes with split or drone count.
+Train, val and test rows of a tier need the same card. Cards under 10 GB are not expected to work for any tier (no "low" class).
+Measured on an RTX 3060 12 GB.
+
 ## 2b. Still images (second run, after tracking finishes)
 
 Target: **1,000 stills per person** (plan: `manifests/team_v1/stills_plan.json`). Do not run at the same time as tracking.
