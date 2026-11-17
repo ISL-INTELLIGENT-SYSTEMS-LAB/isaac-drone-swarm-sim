@@ -212,19 +212,19 @@ Counting: `run_counting_bins.ps1 -ModelMix balanced -ColorMode random` also work
 
 ## Team manifest (swarm data for Dr. B's request)
 
-Every team sequence is planned up front in `manifests/team_v1/manifest.csv` / `.json` (220 rows: tiers 1-3 with 60 sequences each,
-tier 4 with 40; one seed per row; settings dealt evenly; low-sun lighting and the wide camera are test-only hold-outs; splits by sequence).
+Every team sequence is planned up front in `manifests/team_v1/manifest.csv` / `.json` (220 rows in 8 swarm-size bins S1-S8; tier = person group:
+1 = a (S1 1-10, S2 11-20), 2 = b (S3 21-50, S4 51-100), 3 = c (S5 101-200, S6 201-500, S7 501-1,000) with 60 sequences each, 4 = Mosa (S8 1,001-100,000) with 40; one seed per row; settings dealt evenly; low-sun lighting and the wide camera are test-only hold-outs; splits by sequence).
 Step-by-step instructions for the team: **[TEAM_GUIDE.md](TEAM_GUIDE.md)**.
 
 ```powershell
 .\env\Scripts\python.exe ds_tools\make_manifest.py --out manifests\team_v1                 # (re)build the plan (same args = same file)
-.\env\Scripts\python.exe ds_tools\run_manifest.py --slot P2 --name alex                       # render your rows -> datasets\alex_tier1..3
-.\env\Scripts\python.exe ds_tools\contact_sheet.py "datasets\alex_tier*"                     # first frame of every sequence, labelled
+.\env\Scripts\python.exe ds_tools\run_manifest.py --slot PB --tiers 2 --name b                 # render b's rows (S3+S4) -> datasets\b_tier2
+.\env\Scripts\python.exe ds_tools\contact_sheet.py "datasets\b_tier*"                        # first frame of every sequence, labelled
 .\env\Scripts\python.exe ds_tools\check_coverage.py "datasets\*_tier*" --tiers 1,2,3          # done / missing rows, coverage, duplicates
 ```
 
 `run_manifest.py` drives `gen_tracking.py` in its manifest mode (`MANIFEST_ROWS`; see the docstring). Without `MANIFEST_ROWS`
-the generator behaves exactly as before. Tier 4 rows need the big-swarm (PointInstancer) mode, which `gen_tracking.py` does not have yet,
+the generator behaves exactly as before. Tier 4 (S8) rows need the big-swarm (PointInstancer) mode, which `gen_tracking.py` does not have yet,
 so they are skipped. The runner kills an Isaac Sim process that hangs in shutdown after all its rows are written, or that crashed.
 
 ## Team assignment (re-ID data collection)

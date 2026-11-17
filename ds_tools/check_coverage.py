@@ -15,7 +15,7 @@ import os, sys, csv, json, glob, argparse
 import numpy as np
 from PIL import Image
 
-DIMS = ["tier", "split", "test_kind", "time_of_day", "weather", "camera_setup", "cam_angle", "model_mix_name", "color_mode", "wind", "density", "breakaway", "multi_swarm", "assignee_slot"]
+DIMS = ["tier", "size_bin", "split", "test_kind", "time_of_day", "weather", "camera_setup", "cam_angle", "model_mix_name", "color_mode", "wind", "density", "breakaway", "multi_swarm", "assignee_slot"]
 
 def default_manifest():
     root = os.environ.get("DRONE_SCENE_ROOT") or os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
@@ -51,11 +51,15 @@ def main():
     ap.add_argument("folders", nargs="+"); ap.add_argument("--manifest", default=default_manifest(), help="default: manifests/team_v1/manifest.json (the shared team plan)")
     ap.add_argument("--out", default=""); ap.add_argument("--min-frac", type=float, default=0.5); ap.add_argument("--min-seqs", type=int, default=3)
     ap.add_argument("--hash-dist", type=int, default=4); ap.add_argument("--rows", default="", help="only check these seq_ids (e.g. a smoke test)")
-    ap.add_argument("--tiers", default="", help="only plan these tiers, e.g. 1,2,3 while tier 4 is not wired up")
+    ap.add_argument("--tiers", default="", help="only plan these tiers (person groups: 1 = a, 2 = b, 3 = c, 4 = Mosa), e.g. 2")
+    ap.add_argument("--bins", default="", help="only plan these size bins, e.g. S3,S4 or 3,4")
     a = ap.parse_args()
     M = json.load(open(a.manifest)); plan = {r["seq_id"]: r for r in M["rows"]}
     if a.rows: plan = {k: v for k, v in plan.items() if k in set(a.rows.split(","))}
     if a.tiers: plan = {k: v for k, v in plan.items() if int(v["tier"]) in {int(t) for t in a.tiers.split(",")}}
+    if a.bins:
+        wb = {b.strip().upper().lstrip("S") for b in a.bins.split(",") if b.strip()}
+        plan = {k: v for k, v in plan.items() if str(v.get("size_bin", "")).split("_")[0].upper().lstrip("S") in wb}
     out = a.out or os.path.join(os.path.commonpath([os.path.abspath(f) for f in seq_dirs(a.folders)] or ["."]), "_coverage")
     os.makedirs(out, exist_ok=True)
     found = {}; unknown = []; dup_render = []; seq_info = {}
@@ -114,21 +118,21 @@ def main():
             if e["done"] < a.min_frac * e["planned"] or e["done"] < min(a.min_seqs, e["planned"]): flags.append(f"{d}={lv}: {e['done']}/{e['planned']} done")
     combo = {}
     for sid in done:
-        r = plan[sid]; k = f"tier{r['tier']}|{r['time_of_day']}|{r['weather']}|{r['camera_setup']}|brk_{r['breakaway']}|{level(r, 'multi_swarm')}"; combo[k] = combo.get(k, 0) + 1
+        r = plan[sid]; k = f"{r.get('size_bin') or 'tier' + str(r['tier'])}|{r['time_of_day']}|{r['weather']}|{r['camera_setup']}|brk_{r['breakaway']}|{level(r, 'multi_swarm')}"; combo[k] = combo.get(k, 0) + 1
     # histograms
     import matplotlib; matplotlib.use("Agg"); import matplotlib.pyplot as plt
     sizes = [n for s in seq_info.values() for n in s["swarms"]]; boxes = [x for s in seq_info.values() for x in s["swarm_box_px"]]; bboxes = [x for s in seq_info.values() for x in s["brk_box_px"]]
     fig, ax = plt.subplots(figsize=(7, 4))
     if sizes: ax.hist(sizes, bins=np.logspace(0, np.log10(max(sizes) + 1), 25), color="#3a7")
     ax.set_xscale("log"); ax.set_xlabel("drones per swarm (rendered)"); ax.set_ylabel("swarms"); ax.set_title(f"Swarm size, {len(sizes)} swarms in {len(seq_info)} sequences")
-    for t, (lo, hi) in M["tiers"].items(): ax.axvline(lo, color="#999", ls=":", lw=1)
+    for lo in ([b["lo"] for b in M["size_bins"]] if M.get("size_bins") else [v[0] for v in M["tiers"].values()]): ax.axvline(lo, color="#999", ls=":", lw=1)
     fig.tight_layout(); fig.savefig(os.path.join(out, "hist_swarm_size.png"), dpi=110); plt.close(fig)
     fig, ax = plt.subplots(figsize=(7, 4))
     if boxes: ax.hist(boxes, bins=np.logspace(0, np.log10(1300), 30), color="#38c", alpha=0.85, label=f"swarm boxes ({len(boxes)})")
     if bboxes: ax.hist(bboxes, bins=np.logspace(0, np.log10(1300), 30), color="#d33", alpha=0.7, label=f"breakaway boxes ({len(bboxes)})")
     ax.set_xscale("log"); ax.set_xlabel("box size, sqrt(w*h) px (1280x720 image)"); ax.set_ylabel("boxes (all frames)"); ax.legend(); ax.set_title("Swarm / breakaway box size")
     fig.tight_layout(); fig.savefig(os.path.join(out, "hist_box_size.png"), dpi=110); plt.close(fig)
-    show = [d for d in ("tier", "split", "time_of_day", "weather", "camera_setup", "model_mix_name", "wind", "breakaway", "multi_swarm", "assignee_slot")]
+    show = [d for d in ("size_bin", "split", "time_of_day", "weather", "camera_setup", "model_mix_name", "wind", "breakaway", "multi_swarm", "assignee_slot")]
     fig, axs = plt.subplots(2, 5, figsize=(16, 6))
     for axx, d in zip(axs.ravel(), show):
         lv = list(cov[d]); p = [cov[d][k]["planned"] for k in lv]; q = [cov[d][k]["done"] for k in lv]
@@ -147,7 +151,7 @@ def main():
                sequences={k: {kk: vv for kk, vv in v.items() if kk not in ("swarm_box_px", "brk_box_px")} for k, v in seq_info.items()})
     json.dump(rep, open(os.path.join(out, "coverage_report.json"), "w"), indent=1)
     L = [f"# Coverage report", "", f"Manifest: `{a.manifest}`  ", f"Folders: {', '.join('`'+f+'`' for f in a.folders)}", "",
-         f"- Planned rows checked: **{len(plan)}**; done: **{rep['done']}**; incomplete: **{len(rep['incomplete'])}**; missing: **{len(rep['missing'])}**; need big-swarm mode (tier 4): **{len(rep['needs_bigswarm_mode'])}**",
+         f"- Planned rows checked: **{len(plan)}**; done: **{rep['done']}**; incomplete: **{len(rep['incomplete'])}**; missing: **{len(rep['missing'])}**; need big-swarm mode (S8, tier 4): **{len(rep['needs_bigswarm_mode'])}**",
          f"- Sequences found: {len(seq_info)}, frames: {nfr}, swarm boxes: {len(boxes)}, breakaway boxes: {len(bboxes)}, swarm boxes touching the image border: {rep['swarm_boxes_cut_by_border']}",
          f"- Rendered twice: {len(dup_render)}; duplicate seeds: {len(dup_seed)}; near-duplicate first frames (dHash <= {a.hash_dist} bits): {len(near)}; folders not in the manifest: {len(unknown)}", ""]
     if rep["incomplete"]: L += ["## Incomplete", ""] + [f"- `{k}`: {v}" for k, v in rep["incomplete"].items()] + [""]

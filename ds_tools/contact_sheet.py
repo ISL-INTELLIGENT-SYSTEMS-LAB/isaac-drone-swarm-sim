@@ -21,7 +21,7 @@ def seqs(folder):
 def label(sd, meta):
     r = meta.get("manifest_row") or {}; sid = r.get("seq_id") or os.path.basename(sd)
     sw = [s["n_drones"] for s in meta.get("swarms", [])] or [meta.get("n_drones")]
-    l1 = f"{sid}  T{r.get('tier', '?')} {r.get('split', '')}{('/' + r['test_kind']) if r.get('test_kind') else ''}  swarms {'+'.join(map(str, sw))}"
+    l1 = f"{sid}  {r.get('size_bin') or 'T' + str(r.get('tier', '?'))} {r.get('split', '')}{('/' + r['test_kind']) if r.get('test_kind') else ''}  swarms {'+'.join(map(str, sw))}"
     brk = f"brk {r.get('brk_size')}x{r.get('brk_count')}@{r.get('brk_start_frame')}" if meta.get("has_breakaway") else "no brk"
     l2 = f"{r.get('time_of_day', '?')} {r.get('weather', '')} | {r.get('camera_setup', meta.get('camera_framing', ''))} {r.get('cam_angle', '')}"
     l3 = f"{r.get('model_mix_name', '')} {r.get('color_mode', '')} | {r.get('wind', '')} {r.get('density', '')} | {brk}"
