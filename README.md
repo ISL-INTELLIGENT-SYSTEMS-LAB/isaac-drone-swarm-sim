@@ -213,7 +213,7 @@ Counting: `run_counting_bins.ps1 -ModelMix balanced -ColorMode random` also work
 ## Team manifest (swarm data for Dr. B's request)
 
 Every team sequence is planned up front in `manifests/team_v1/manifest.csv` / `.json` (220 rows in 8 swarm-size bins S1-S8; tier = person group:
-1 = a (S1 1-10, S2 11-20), 2 = b (S3 21-50, S4 51-100), 3 = c (S5 101-200, S6 201-500, S7 501-1,000) with 60 sequences each, 4 = Mosa (S8 1,001-100,000) with 40; one seed per row; settings dealt evenly; low-sun lighting and the wide camera are test-only hold-outs; splits by sequence).
+1 = a (S1 1-10, S2 11-20), 2 = b (S3 21-50, S4 51-100), 3 = c (S5 101-200, S6 201-500, S7 501-1,000) with 60 sequences each, 4 = lead (S8 1,001-100,000) with 40; one seed per row; settings dealt evenly; low-sun lighting and the wide camera are test-only hold-outs; splits by sequence).
 Step-by-step instructions for the team: **[TEAM_GUIDE.md](TEAM_GUIDE.md)**.
 
 ```powershell

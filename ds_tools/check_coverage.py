@@ -51,7 +51,7 @@ def main():
     ap.add_argument("folders", nargs="+"); ap.add_argument("--manifest", default=default_manifest(), help="default: manifests/team_v1/manifest.json (the shared team plan)")
     ap.add_argument("--out", default=""); ap.add_argument("--min-frac", type=float, default=0.5); ap.add_argument("--min-seqs", type=int, default=3)
     ap.add_argument("--hash-dist", type=int, default=4); ap.add_argument("--rows", default="", help="only check these seq_ids (e.g. a smoke test)")
-    ap.add_argument("--tiers", default="", help="only plan these tiers (person groups: 1 = a, 2 = b, 3 = c, 4 = Mosa), e.g. 2")
+    ap.add_argument("--tiers", default="", help="only plan these tiers (person groups: 1 = a, 2 = b, 3 = c, 4 = lead), e.g. 2")
     ap.add_argument("--bins", default="", help="only plan these size bins, e.g. S3,S4 or 3,4")
     a = ap.parse_args()
     M = json.load(open(a.manifest)); plan = {r["seq_id"]: r for r in M["rows"]}

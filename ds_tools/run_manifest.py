@@ -1,7 +1,7 @@
 """Render manifest rows with the existing generator (ds_tools/gen_tracking.py in manifest mode). Resumable: a row whose
 <out>/<seq_id>/meta.json exists is skipped, so just re-run the same command after a crash.
 
-Run it with the kit's Isaac Sim python from your install guide (it starts gen_tracking.py with the same interpreter); on Mosa's PC
+Run it with the kit's Isaac Sim python from your install guide (it starts gen_tracking.py with the same interpreter); on the reference PC
 that is .\\env\\python.exe, on other installs it may be .\\env\\Scripts\\python.exe:
     .\\env\\python.exe ds_tools\\run_manifest.py --person 1 --of 1 --tiers 2 --name b --dry-run   # all of b's rows (tier 2 = person B), list only
     .\\env\\python.exe ds_tools\\run_manifest.py --slot PB --tiers 2 --name b                      # same rows by assignee_slot -> datasets\\b_tier2
@@ -11,7 +11,7 @@ that is .\\env\\python.exe, on other installs it may be .\\env\\Scripts\\python.
 Output: <out-root>/<name>_tier<k>/<seq_id>/ (img, masks, gt, ann/frames.jsonl, meta.json with the manifest row, swarm/ labels),
 logs in <out-root>/<name>_tier<k>/logs/. Rows are grouped by tier, model mix and colour mode (the drone pool is built once per
 Isaac Sim process) and rendered --per-proc rows per process. Tier 4 / size bin S8 rows (generator = needs_bigswarm_mode) are skipped
-and listed. tier = person group (1 = a, 2 = b, 3 = c, 4 = Mosa); size_bin = S1..S8 drones-per-swarm bin (see make_manifest.py BINS)."""
+and listed. tier = person group (1 = a, 2 = b, 3 = c, 4 = lead); size_bin = S1..S8 drones-per-swarm bin (see make_manifest.py BINS)."""
 import os, sys, csv, json, time, shutil, argparse, subprocess
 
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.environ.get("DRONE_SCENE_ROOT") or os.path.abspath(os.path.join(HERE, ".."))
@@ -35,7 +35,7 @@ def main():
     ap.add_argument("--manifest", default=default_manifest(), help="default: manifests/team_v1/manifest.json (the shared team plan)")
     ap.add_argument("--person", type=int, default=0); ap.add_argument("--of", type=int, default=0, help="number of people (slice = deal_rank % of == person-1)")
     ap.add_argument("--slot", default="", help="use the assignee_slot column instead, e.g. P2"); ap.add_argument("--rows", default="", help="comma-separated seq_ids")
-    ap.add_argument("--tiers", default="1,2,3", help="person groups: 1 = a, 2 = b, 3 = c, 4 = Mosa (big-swarm, skipped)")
+    ap.add_argument("--tiers", default="1,2,3", help="person groups: 1 = a, 2 = b, 3 = c, 4 = lead (big-swarm, skipped)")
     ap.add_argument("--bins", default="", help="only these size bins, e.g. S3,S4 or 3,4 (default: all bins of the selected rows)"); ap.add_argument("--limit", type=int, default=0); ap.add_argument("--frames", type=int, default=0, help="override frames per sequence (smoke tests)")
     ap.add_argument("--name", required=True, help="your name (folder prefix)"); ap.add_argument("--out-root", default=os.path.join(ROOT, "datasets"))
     ap.add_argument("--per-proc", type=int, default=4); ap.add_argument("--rt", type=int, default=4); ap.add_argument("--py", default=sys.executable)

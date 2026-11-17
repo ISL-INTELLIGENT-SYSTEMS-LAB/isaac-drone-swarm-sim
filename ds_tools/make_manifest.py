@@ -6,11 +6,11 @@ settings by hand and no two people can render the same scene. No Isaac Sim neede
     python ds_tools/make_manifest.py --out manifests/team_v1 --slice --person 2 --of 4   # deal_rank slice (manifest_P2of4.csv)
 
 Plan (defaults, table BINS below = the one place the size bins live): 8 swarm-size bins (drones per swarm), each owned by one
-person (assignee_slot) and one person group (tier column: 1 = A, 2 = B, 3 = C, 4 = Mosa):
+person (assignee_slot) and one person group (tier column: 1 = A, 2 = B, 3 = C, 4 = lead):
   S1 1-10, S2 11-20 -> A (PA, tier 1), 30 sequences each      S3 21-50, S4 51-100 -> B (PB, tier 2), 30 each
-  S5 101-200, S6 201-500, S7 501-1000 -> C (PC, tier 3), 20 each   S8 1001-100000 -> Mosa (PM, tier 4), 40, needs_bigswarm_mode
+  S5 101-200, S6 201-500, S7 501-1000 -> C (PC, tier 3), 20 each   S8 1001-100000 -> lead (PL, tier 4), 40, needs_bigswarm_mode
 Splits are by SEQUENCE with fixed counts per bin (30 -> 21/5/4 or 21/4/5, 20 -> 14/3/3, 40 -> 28/6/6), so A/B/C get 42/9/9 and
-Mosa 28/6/6 (154/33/33 overall), stratified by breakaway / multi-swarm inside each bin. Hold-outs: the low-sun lighting condition
+lead 28/6/6 (154/33/33 overall), stratified by breakaway / multi-swarm inside each bin. Hold-outs: the low-sun lighting condition
 and the wide (original tracking-style) camera appear ONLY in test rows (test_kind = ood_light / ood_cam), dealt in turn over each
 person's test rows bin by bin, so every bin gets them as evenly as possible.
 ~40 % of sequences per bin get a scripted breakaway (a subgroup of 10-30 % of the swarm, 1 drone for tiny swarms), starting 15-40 %
@@ -29,12 +29,12 @@ ROOT = os.environ.get("DRONE_SCENE_ROOT") or os.path.abspath(os.path.join(os.pat
 BINS = [("S1", 1, 10, "PA", 1, 30, (21, 5, 4), True), ("S2", 11, 20, "PA", 1, 30, (21, 4, 5), True),
         ("S3", 21, 50, "PB", 2, 30, (21, 5, 4), True), ("S4", 51, 100, "PB", 2, 30, (21, 4, 5), True),
         ("S5", 101, 200, "PC", 3, 20, (14, 3, 3), True), ("S6", 201, 500, "PC", 3, 20, (14, 3, 3), True),
-        ("S7", 501, 1000, "PC", 3, 20, (14, 3, 3), False), ("S8", 1001, 100000, "PM", 4, 40, (28, 6, 6), True)]
-PEOPLE = {"PA": dict(name="a", tier=1), "PB": dict(name="b", tier=2), "PC": dict(name="c", tier=3), "PM": dict(name="Mosa", tier=4)}
-GPU = {  # gpu_class / gpu_note per bin (measured on Mosa's RTX 3060 12 GB)
+        ("S7", 501, 1000, "PC", 3, 20, (14, 3, 3), False), ("S8", 1001, 100000, "PL", 4, 40, (28, 6, 6), True)]
+PEOPLE = {"PA": dict(name="a", tier=1), "PB": dict(name="b", tier=2), "PC": dict(name="c", tier=3), "PL": dict(name="lead", tier=4)}
+GPU = {  # gpu_class / gpu_note per bin (measured on an RTX 3060 12 GB)
     "mid": "10 GB+ card; measured 8.6-9.4 GB peak (RTX 3060 12 GB, Nov 16 smoke test)",
     "mid_S7": "10 GB+ card; 1,000-drone scale test 9.0 GB peak; not measured with the flight generator above 175 drones",
-    "high": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (Mosa)"}
+    "high": "12 GB+ card; scale test 9.2-9.5 GB at 10k-100k drones; flight mode not measured yet (lead)"}
 def gpu_for(b): return ("high", GPU["high"]) if b[4] == 4 else ("mid", GPU["mid_S7"] if b[0] == "S7" else GPU["mid"])
 def bin_label(b): return f"{b[0]}_{b[1]}-{b[2]}"
 TIERS = {t: [min(b[1] for b in BINS if b[4] == t), max(b[2] for b in BINS if b[4] == t)] for t in sorted({b[4] for b in BINS})}
@@ -206,14 +206,14 @@ if __name__ == "__main__":
     ap.add_argument("--base-seed", type=int, default=910000, help="first row seed (rows get base, base+1, ...); old datasets used 77001 / 1000*member")
     ap.add_argument("--plan-seed", type=int, default=2026, help="seed of the plan itself (same plan-seed + args = same manifest)")
     ap.add_argument("--slice", action="store_true", help="also write a slice CSV: manifest_<slot>.csv with --slot, or manifest_P<person>of<of>.csv")
-    ap.add_argument("--slot", default="", help="with --slice: PA, PB, PC or PM"); ap.add_argument("--person", type=int, default=1); ap.add_argument("--of", type=int, default=1)
+    ap.add_argument("--slot", default="", help="with --slice: PA, PB, PC or PL"); ap.add_argument("--person", type=int, default=1); ap.add_argument("--of", type=int, default=1)
     a = ap.parse_args(); os.makedirs(a.out, exist_ok=True)
     rows = build(a); args_out = {k: v for k, v in vars(a).items() if not k.startswith("_")}
     write_csv(os.path.join(a.out, "manifest.csv"), rows)
     meta = dict(created_by="ds_tools/make_manifest.py", args=args_out,
                 size_bins=[dict(size_bin=bin_label(b), name=b[0], lo=b[1], hi=b[2], slot=b[3], person=PEOPLE[b[3]]["name"], tier=b[4], sequences=b[5],
                                 train=b[6][0], val=b[6][1], test=b[6][2], multi_swarm=b[7], gpu_class=gpu_for(b)[0], gpu_note=gpu_for(b)[1]) for b in BINS],
-                tiers={str(k): v for k, v in TIERS.items()}, tier_meaning="tier = person group: 1 = a (PA), 2 = b (PB), 3 = c (PC), 4 = Mosa (PM)",
+                tiers={str(k): v for k, v in TIERS.items()}, tier_meaning="tier = person group: 1 = a (PA), 2 = b (PB), 3 = c (PC), 4 = lead (PL)",
                 people=PEOPLE, holdout_test_only=HOLDOUT,
                 levels=dict(time_of_day=TIME_OF_DAY, weather={k: [SKIES[i] for i in v] for k, v in WEATHER.items()}, camera_setup=CAMERA, cam_angle=CAM_ANGLE,
                             wind_jitter_multiplier=WIND, model_mix=MODEL_MIX, color_mode=COLOR, density_spread=SPREAD),

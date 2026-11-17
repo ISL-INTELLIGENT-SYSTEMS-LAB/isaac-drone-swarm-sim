@@ -1,5 +1,5 @@
 {
-    "note": "Still-image (counting) targets per person, rendered with ds_tools/run_counting_bins.ps1 AFTER the tracking slice. 1,000 stills per person; the still bins cover exactly the person's tracking size bins (tier = person group). Mosa's S8 (1,001-100,000) stills are not planned yet.",
+    "note": "Still-image (counting) targets per person, rendered with ds_tools/run_counting_bins.ps1 AFTER the tracking slice. 1,000 stills per person; the still bins cover exactly the person's tracking size bins (tier = person group). lead's S8 (1,001-100,000) stills are not planned yet.",
     "people": [
         {
             "name": "a",
