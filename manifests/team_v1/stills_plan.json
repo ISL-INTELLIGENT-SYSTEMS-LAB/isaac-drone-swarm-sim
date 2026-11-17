@@ -1,0 +1,43 @@
+﻿{
+    "note":  "Still-image (counting) targets per person, rendered with ds_tools/run_counting_bins.ps1 AFTER the tracking slice. 1,000 stills per person. Tier 4 stills are not planned yet.",
+    "people":  [
+                   {
+                       "name":  "a",
+                       "tier":  1,
+                       "drones":  "1-10",
+                       "bins":  "1-5,6-10",
+                       "per_bin":  500,
+                       "total":  1000,
+                       "seed":  3001,
+                       "model_mix":  "balanced",
+                       "color_mode":  "random",
+                       "out":  "datasets\\a_stills_tier1"
+                   },
+                   {
+                       "name":  "b",
+                       "tier":  2,
+                       "drones":  "11-100",
+                       "bins":  "11-19,20-28,29-37,38-46,47-55,56-64,65-73,74-82,83-91,92-100",
+                       "per_bin":  100,
+                       "total":  1000,
+                       "seed":  3002,
+                       "model_mix":  "balanced",
+                       "color_mode":  "random",
+                       "out":  "datasets\\b_stills_tier2"
+                   },
+                   {
+                       "name":  "c",
+                       "tier":  3,
+                       "drones":  "101-1000",
+                       "bins":  "101-150,151-200,201-300,301-500,501-1000",
+                       "per_bin":  200,
+                       "total":  1000,
+                       "seed":  3003,
+                       "model_mix":  "ghost",
+                       "color_mode":  "random",
+                       "pool_ghost":  1100,
+                       "out":  "datasets\\c_stills_tier3",
+                       "caution":  "run_counting_bins.ps1 is only tested to ~150 drones; smoke test with -PerBin 3 first"
+                   }
+               ]
+}

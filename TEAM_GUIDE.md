@@ -1,4 +1,4 @@
-# Team data plan: manifest, render, check
+﻿# Team data plan: manifest, render, check
 
 Goal for Dr. B's request: one box per swarm (1 drone up to 100,000), box coordinates over time, breakaways flagged, a model fast
 enough for a laptop / edge device. To make sure the team's data is diverse and nobody renders the same thing twice, every sequence
@@ -41,6 +41,20 @@ same mix of tiers, splits, lighting, cameras and breakaways.
 - Estimate from those numbers (not measured): one 4-person slice is ~45 renderable rows x 50 frames, about 30 min of rendering plus
   ~20 Isaac Sim starts (one per tier / model mix / colour group), so roughly 40-60 min per person.
 
+## 2b. Still images (second run, after tracking finishes)
+
+Target: **1,000 stills per person** (plan: `manifests/team_v1/stills_plan.json`). Do not run at the same time as tracking.
+
+```powershell
+# a, tier 1 (2 bins x 500)
+.\ds_tools\run_counting_bins.ps1 -Bins "1-5,6-10" -PerBin 500 -Seed 3001 -ModelMix balanced -ColorMode random -Out datasets\a_stills_tier1
+# b, tier 2 (10 bins x 100)
+.\ds_tools\run_counting_bins.ps1 -Bins "11-19,20-28,29-37,38-46,47-55,56-64,65-73,74-82,83-91,92-100" -PerBin 100 -Seed 3002 -ModelMix balanced -ColorMode random -Out datasets\b_stills_tier2
+# c, tier 3 (5 bins x 200) - smoke test first with -PerBin 3 -Out datasets\_test\c_stills
+.\ds_tools\run_counting_bins.ps1 -Bins "101-150,151-200,201-300,301-500,501-1000" -PerBin 200 -Seed 3003 -ModelMix ghost -PoolGhost 1100 -ColorMode random -Out datasets\c_stills_tier3
+```
+
+Resumable: re-run the same command. `progress.json` in the output folder shows frames per bin; done = every bin full (1,000 total).
 ## 3. Check before you upload
 
 ```powershell
