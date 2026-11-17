@@ -1,4 +1,4 @@
-﻿# Team data plan: manifest, render, check
+# Team data plan: manifest, render, check
 
 Goal for Dr. B's request: one box per swarm (1 drone up to 100,000), box coordinates over time, breakaways flagged, a model fast
 enough for a laptop / edge device. To make sure the team's data is diverse and nobody renders the same thing twice, every sequence
@@ -55,6 +55,7 @@ Target: **1,000 stills per person** (plan: `manifests/team_v1/stills_plan.json`)
 ```
 
 Resumable: re-run the same command. `progress.json` in the output folder shows frames per bin; done = every bin full (1,000 total).
+
 ## 3. Check before you upload
 
 ```powershell

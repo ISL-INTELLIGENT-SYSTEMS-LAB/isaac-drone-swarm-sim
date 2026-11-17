@@ -1,4 +1,4 @@
-﻿{
+{
     "note":  "Still-image (counting) targets per person, rendered with ds_tools/run_counting_bins.ps1 AFTER the tracking slice. 1,000 stills per person. Tier 4 stills are not planned yet.",
     "people":  [
                    {
