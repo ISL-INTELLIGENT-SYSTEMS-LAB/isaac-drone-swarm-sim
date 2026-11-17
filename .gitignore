@@ -29,3 +29,6 @@ arl_lite_*.usdc
 Thumbs.db
 .vscode/
 .idea/
+
+# per-process root layers written by the generators (safe to delete)
+datasets/stages/*_[0-9]*.usda

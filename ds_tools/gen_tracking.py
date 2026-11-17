@@ -18,6 +18,13 @@ Swarm scenario options (run_tracking.ps1 -Swarms/-SwarmSep/-Spread/-BrkProb/-Brk
   BRK_GROUP (1)    drones per breakaway event (>1 = a subgroup of nearest neighbours leaves together)
   SWARM_ANN (1)    write swarm annotations after each sequence (ds_tools/swarm_annotate.py; can also be run later)
   REP_WRITER (0)   also attach a Replicator BasicWriter (tight 2D boxes + instance-id + 'swarm' semantic segmentation) -> seq/replicator/
+Team-manifest mode (ds_tools/run_manifest.py; unset = old behaviour, identical designs for the same seed):
+  MANIFEST_ROWS    JSON list of manifest rows; sequence s renders row s into OUT/<seq_id>. Each row sets SEED (its own seed, the
+                   design rng no longer depends on s), N_DRONES, SWARMS, SWARM_SEP, SPREAD, breakaways (on/off, count, group size,
+                   start frame in the clip), CLIP_FRAMES, CAM_FRAMING, CAM_DIST, and these overrides (drawn values are replaced,
+                   the rng stream is unchanged): sun elevation / azimuth / intensity / colour temperature, sky HDR index and
+                   intensity, chase-camera elevation, chase_fit (frame the whole formation, no 30-60 px drone-size cap) and a
+                   turbulence multiplier on the per-drone position jitter (a wind proxy; there is no wind physics).
 IDs: drone "id" == "track_id" is persistent for the whole sequence and equals the value of that drone in masks/*.png."""
 import os, sys, json, time, math, shutil
 os.environ["OMNI_KIT_ACCEPT_EULA"] = "YES"
@@ -42,7 +49,25 @@ SWARMS = max(1, int(os.environ.get("SWARMS", "1"))); SWARM_SEP = float(os.enviro
 BRK_PROB = float(os.environ.get("BRK_PROB", "0.5")); BRK_COUNT = int(os.environ.get("BRK_COUNT", "0")); BRK_GROUP = max(1, int(os.environ.get("BRK_GROUP", "1")))
 N_DRONES = int(os.environ.get("N_DRONES", "0"))   # >0: fixed number of drones (overrides the random / binned swarm size)
 SWARM_ANN = os.environ.get("SWARM_ANN", "1") == "1"; REP_WRITER = os.environ.get("REP_WRITER", "0") == "1"
-todo = [s for s in range(S0, S1) if not os.path.exists(os.path.join(OUT, f"seq_{s:03d}", "meta.json"))]
+MROWS = json.load(open(os.environ["MANIFEST_ROWS"])) if os.environ.get("MANIFEST_ROWS") else None
+OVR = {}   # per-row overrides (manifest mode only; empty = generator draws everything itself)
+def seq_name(s): return str(MROWS[s]["seq_id"]) if MROWS else f"seq_{s:03d}"
+def apply_row(r):
+    """Manifest mode: set the scenario globals for one manifest row (see module docstring)."""
+    global SEED, N_DRONES, SWARMS, SWARM_SEP, SPREAD, BRK_PROB, BRK_COUNT, BRK_GROUP, FORCE_BRK, CAM_DIST, CAM_FRAMING, CLIP
+    g = lambda k, d: d if r.get(k) in (None, "") else r[k]   # empty CSV cell = default
+    SEED = int(r["seed"]); N_DRONES = int(r["n_drones_total"]); SWARMS = int(r["n_swarms"]); SWARM_SEP = float(g("swarm_sep", 1.0))
+    SPREAD = float(g("spread", 1.0)); CLIP = int(g("frames", 50)); CAM_FRAMING = str(r["cam_framing"]); CAM_DIST = float(g("cam_dist", 1.0))
+    on = str(g("breakaway", "off")) == "on"
+    BRK_PROB = 1.0 if on else 0.0; FORCE_BRK = on; BRK_COUNT = int(g("brk_count", 1)) if on else 0; BRK_GROUP = max(1, int(g("brk_size", 1))) if on else 1
+    OVR.clear()
+    for k in ("sun_el", "sun_az", "sun_int", "sun_ct", "sky_int", "cam_el_deg", "jitter"):
+        if r.get(k) not in (None, ""): OVR[k] = float(r[k])
+    if r.get("sky_tex") not in (None, ""): OVR["sky_tex"] = int(r["sky_tex"])
+    if on and r.get("brk_start_frame") not in (None, ""): OVR["brk_at"] = int(r["brk_start_frame"])
+    OVR["chase_fit"] = str(g("chase_fit", "1")) in ("1", "True", "true")
+if MROWS: S0, S1 = max(0, S0), min(S1, len(MROWS)) if S1 > 0 else len(MROWS)
+todo = [s for s in range(S0, S1) if not os.path.exists(os.path.join(OUT, seq_name(s), "meta.json"))]
 log("seqs", S0, S1, "todo", todo)
 if not todo: app.close(); sys.exit(0)
 stage = open_layer(app, os.path.join(DS, "stages", f"tracking_{os.getpid()}.usda"), [DESERT])
@@ -116,7 +141,8 @@ def split_groups(X, K, rng=None):
     return g
 
 def design(s, attempt=0):
-    rng = np.random.default_rng([SEED, s] if not BINNED else [SEED, BIN_LO, BIN_HI, s, attempt])
+    sk = 0 if MROWS else s   # manifest mode: the row's own seed fully defines the design
+    rng = np.random.default_rng([SEED, sk] if not BINNED else [SEED, BIN_LO, BIN_HI, sk, attempt])
     fps = int(rng.choice([10, 10, 12, 15])); F = int(rng.integers(140, 201)); dt = 1.0 / fps; T = np.arange(F) * dt
     u = rng.random()
     N = int(rng.integers(5, 31)) if u < 0.3 else (int(rng.integers(31, 151)) if u < 0.7 else int(np.exp(rng.uniform(math.log(151), math.log(max(NMAX, 151) + 1)))))
@@ -183,7 +209,7 @@ def design(s, attempt=0):
     og = colsort(P0[:, :2] - c0[:2]); oo = colsort(Oxy); perm = np.empty(N, int); perm[og] = oo; O = O[perm]; Oxy = Oxy[perm]
     sid = np.zeros(N, int)   # scenario swarm index per drone (0-based); all 0 when SWARMS == 1
     if SWARMS > 1 and N >= 2 * SWARMS:   # split the formation into SWARMS compact groups and push them apart (separate rng stream)
-        srng = np.random.default_rng([SEED, 11, BIN_LO, BIN_HI, s, attempt])
+        srng = np.random.default_rng([SEED, 11, BIN_LO, BIN_HI, sk, attempt])
         sid = split_groups(O[:, :2], SWARMS, srng)
         for g in range(SWARMS): O[sid == g] -= O[sid == g].mean(0)
         rg = max(1.5, max(float(np.linalg.norm(O[sid == g, :2], axis=1).max()) for g in range(SWARMS)))
@@ -252,7 +278,7 @@ def design(s, attempt=0):
     Pos[:, :, :2] = P0[None, :, :2] + (slot[:, :, :2] - P0[None, :, :2]) * bxy[:, :, None]
     Pos[:, :, 2] = P0[None, :, 2] + (slot[:, :, 2] - P0[None, :, 2]) * bz
     # small per-drone jitter (OU) while airborne
-    jit = np.zeros((F, N, 3)); th = 0.6; sg = 0.25 * min(1.0, sp / 3)
+    jit = np.zeros((F, N, 3)); th = 0.6; sg = 0.25 * min(1.0, sp / 3) * OVR.get("jitter", 1.0)   # jitter: manifest turbulence multiplier (wind proxy)
     for f in range(1, F): jit[f] = jit[f - 1] - th * jit[f - 1] * dt + sg * math.sqrt(dt) * rng.normal(0, 1, (N, 3))
     Pos += jit * smooth(tr / 1.5)[:, :, None]
     phase = np.where(tr <= 0, 0, np.where(T[:, None] < t_end[None], 1, 2))   # 0 ground, 1 takeoff, 2 cruise
@@ -340,8 +366,8 @@ def design(s, attempt=0):
             focal = float(rng.uniform(18, 50)); fxc = focal / 20.955 * W
             d = fxc * Dform / (rng.uniform(0.35, 0.85) * W)            # formation fills 35-85 % of the image width
             cap = fxc * span / rng.uniform(30, 60)   # (several swarms: frame them all, drop the drone-size cap)
-            d = float(np.clip(min(d, cap) if SWARMS == 1 else d, 6.0, 400.0)) * CAM_DIST   # ...but keep drones ~30-60 px wide (short side ~16+ px)
-            el = math.radians(rng.uniform(8, 40)); az = rng.uniform(0, 2 * math.pi) + math.radians(rng.uniform(-4, 4)) * T   # slow orbit
+            d = float(np.clip(min(d, cap) if (SWARMS == 1 and not OVR.get("chase_fit")) else d, 6.0, 400.0)) * CAM_DIST   # ...but keep drones ~30-60 px wide (short side ~16+ px)
+            el = rng.uniform(8, 40); el = math.radians(OVR.get("cam_el_deg", el)); az = rng.uniform(0, 2 * math.pi) + math.radians(rng.uniform(-4, 4)) * T   # slow orbit
             off_ = d * np.stack([math.cos(el) * np.cos(az), math.cos(el) * np.sin(az), np.full(F, math.sin(el))], 1)
             eyes = tg + off_ + np.cumsum(rng.normal(0, 0.02, (F, 3)), 0)   # small hand-held drift
             eyes[:, 2] = np.maximum(eyes[:, 2], hm(eyes[:, 0], eyes[:, 1], "h") + 3)
@@ -349,7 +375,11 @@ def design(s, attempt=0):
             if hf <= 0.03: break
     sunp = dict(el=float(rng.uniform(10, 80)), az=float(rng.uniform(0, 360)), inten=float(rng.uniform(0.5, 1.6)), ct=float(rng.uniform(4200, 7500)))
     sky = dict(tex=int(rng.integers(len(SKIES))), inten=float(rng.uniform(400, 1300)), rot=float(rng.uniform(0, 360)))
-    arng = np.random.default_rng([SEED, 7, BIN_LO, BIN_HI, s, attempt])   # separate stream: colours never change the scene design
+    for k, o in (("el", "sun_el"), ("az", "sun_az"), ("inten", "sun_int"), ("ct", "sun_ct")):
+        if o in OVR: sunp[k] = float(OVR[o])
+    if "sky_tex" in OVR: sky["tex"] = int(OVR["sky_tex"]) % len(SKIES)
+    if "sky_int" in OVR: sky["inten"] = float(OVR["sky_int"])
+    arng = np.random.default_rng([SEED, 7, BIN_LO, BIN_HI, sk, attempt])   # separate stream: colours never change the scene design
     aps = [sample_appearance(arng, CMODE, CSTR, CWEAR) for _ in range(N)]
     return dict(sid=sid, rng=rng, aps=aps, fps=fps, F=F, T=T, N=N, idx=idx, types=types, spans=spans, Pos=Pos, Vel=Vel, yaw=yaw, pitch=pitch, phase=phase, is_brk=is_brk, bstart=bstart, brk=brk,
                 launch=launch, form=form, spacing=sp, alt=alt, vcl=vcl, speed=speed, stagger=stagger, t_cruise=t_cruise, cmode=cmode, ground_cam=ground_cam, hdr_frac=hf, eyes=eyes, tg=tg, focal=focal, sun=sunp, sky=sky)
@@ -386,13 +416,13 @@ def pick_window(D):
     if CLIP <= 0 or CLIP >= F: return 0, F
     f_cr = int(math.ceil(D["t_cruise"] * D["fps"])); lo = min(f_cr, F - CLIP)
     if BRK_COUNT > 0 and D["brk"]:   # scripted breakaways: put the first breakaway start ~1/4 into the clip
-        fb = min(b["start_frame"] for b in D["brk"]) - 1; return int(np.clip(fb - CLIP // 4, 0, F - CLIP)), CLIP
+        fb = min(b["start_frame"] for b in D["brk"]) - 1; return int(np.clip(fb - ((OVR["brk_at"] - 1) if "brk_at" in OVR else CLIP // 4), 0, F - CLIP)), CLIP
     return int(D["rng"].integers(lo, F - CLIP + 1)), CLIP
 
 def render_seq(s, D, off, Fw):
     """Render frames [off, off+Fw) of design D into OUT/seq_sss (output frames numbered 1..Fw). Returns per-frame n_visible_ge1px."""
     F, N = D["F"], D["N"]
-    sd = os.path.join(OUT, f"seq_{s:03d}")
+    sd = os.path.join(OUT, seq_name(s))
     if os.path.exists(sd): shutil.rmtree(sd)
     for d in ("img", "masks", "gt", "ann"): os.makedirs(os.path.join(sd, d))
     fx = D["focal"] / 20.955 * W
@@ -448,12 +478,13 @@ def render_seq(s, D, off, Fw):
     fj.close()
     if writer is not None: rep.orchestrator.wait_until_complete(); writer.detach()
     open(os.path.join(sd, "gt", "gt.txt"), "w").write("\n".join(gt) + "\n")
-    open(os.path.join(sd, "seqinfo.ini"), "w").write(f"[Sequence]\nname=seq_{s:03d}\nimDir=img\nframeRate={D['fps']}\nseqLength={Fw}\nimWidth={W}\nimHeight={H}\nimExt=.jpg\n")
+    open(os.path.join(sd, "seqinfo.ini"), "w").write(f"[Sequence]\nname={seq_name(s)}\nimDir=img\nframeRate={D['fps']}\nseqLength={Fw}\nimWidth={W}\nimHeight={H}\nimExt=.jpg\n")
     return sd, nvis
 
 for s in todo:
     t_seq = time.time(); done = False
     for att in range(MAX_ACCEPT if BINNED else 1):
+        if MROWS: apply_row(MROWS[s])
         try: D = design(s, att)
         except Exception as e:
             import traceback; log("DESIGN FAILED seq", s, "try", att, repr(e), traceback.format_exc()[-1500:]); continue
@@ -474,7 +505,7 @@ for s in todo:
                 "cruise_alt_agl_m": round(D["alt"], 1), "climb_rate_mps": round(D["vcl"], 2), "cruise_speed_mps": round(D["speed"], 2), "takeoff_stagger": D["stagger"], "cruise_start_time_s": round(D["t_cruise"], 2),
                 "camera_mode": D["cmode"], "offterrain_view_frac": round(D["hdr_frac"], 3), "ground_camera": bool(D["ground_cam"]), "focal_mm": round(D["focal"], 2), "sun": D["sun"], "sky": dict(D["sky"], file=SKIES[D["sky"]["tex"]].split("/")[-1]),
                 "has_breakaway": bool(brk), "breakaways": brk, "gt_format": "MOT: frame,id,x,y,w,h,conf,class,visibility (visible drones only, tight mask box)",
-                "seed": SEED, "design_try": att, "camera_framing": CAM_FRAMING, "cam_dist": CAM_DIST, "source_frames": F, "source_frame_offset": off,
+                "seed": SEED, "manifest_row": MROWS[s] if MROWS else None, "design_try": att, "camera_framing": CAM_FRAMING, "cam_dist": CAM_DIST, "source_frames": F, "source_frame_offset": off,
                 "visible_bin": VISIBLE_BIN, "bin_lo": BIN_LO if BINNED else None, "bin_hi": BIN_HI if BINNED else None,
                 "bin_rule": "median over rendered frames of n_visible_ge1px", "visible_median": med, "visible_first_frame": nvis[0], "visible_min": min(nvis), "visible_max": max(nvis),
                 "id_note": "drones[].id == drones[].track_id is persistent for the whole sequence and equals the mask pixel value; unique only within this sequence (global id = sequence + track_id)",
